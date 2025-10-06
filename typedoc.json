@@ -1,0 +1,27 @@
+{
+  "name": "Kvasir Stream Replayer",
+  "out": "./docs",
+  "entryPoints": [
+    "./src/index.ts"
+  ],
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "./src/demo.ts"
+  ],
+  "includeVersion": true,
+  "excludeExternals": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "hideGenerator": false,
+  "readme": "./README.md",
+  "theme": "default",
+  "categorizeByGroup": true,
+  "categoryOrder": [
+    "Classes",
+    "Interfaces",
+    "Functions",
+    "Variables",
+    "Type Aliases"
+  ]
+}
