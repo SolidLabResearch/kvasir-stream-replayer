@@ -110,19 +110,11 @@ The library consists of several key components:
 - **KvasirClient**: REST API client for Kvasir timeseries operations
 - **LatencyBenchmark**: Measures query performance across different time windows
 
-## Configuration
-
-### Sensor Types Supported
-- Temperature sensors (20-30°C range)
-- Humidity sensors (50-80% range)  
-- Pressure sensors (995-1015 hPa range)
-- Light sensors (0-1000 lux range)
-
-### Performance Guidelines
-- **Real-time Frequency**: Up to 100Hz for single sensors, 10Hz for multiple sensors
-- **Bulk Upload**: Batch sizes of 500-2000 events work best depending on network
-- **Historical Replay**: Acceleration factors of 1x-100x depending on data density
 
 ## License
 
-MIT
+This code is copyrighted by [Ghent University - imec](https://www.ugent.be/ea/idlab/en) and released under the [MIT Licence](./LICENCE) 
+
+## Contact
+
+For any questions, please contact [Kush](mailto:kushbisen@proton.me) or create an issue in the repository.
