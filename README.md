@@ -1,6 +1,7 @@
 # Kvasir Stream Replayer
 
-A TypeScript library for real-time s### Polling-based Subscriptions (Works with ClickHouse - no GraphQL required)
+A TypeScript library for real-time streaming of sensor events to the Kvasir data storage pod. The library does the replaying as well as 
+subscribe for the latest events via polling as well through the Server-Sent Event subscription. 
 ```bash
 # Subscribe to all measurements using polling
 npm run demo subscribe-polling --interval 2000
@@ -27,16 +28,16 @@ npm run example:sse
 ## Features
 
 ### Three Streaming Modes
-1. **Historical Replay**: Replays data with original timestamps and configurable acceleration
-2. **Real-time Frequency**: Streams data at precise intervals (e.g., 4Hz = every 250ms) starting from "now"
-3. **Bulk Upload**: Uploads entire datasets in optimized batches for maximum throughput
+1. Historical Replay: Replays data with original timestamps and configurable acceleration
+2. Real-time Frequency: Streams data at precise intervals (e.g., 4Hz = every 250ms) starting from "now"
+3. Bulk Upload: Uploads entire datasets in optimized batches for maximum throughput
 
 ### Core Capabilities
-- **RDF N-Triples Support**: Parses SAREF ontology-compliant sensor data
-- **Kvasir Integration**: Direct insertion into Kvasir timeseries database
-- **Latency Benchmarking**: Measure query performance for time-range requests
-- **TypeScript**: Full type safety and modern development experience
-- **CLI Interface**: Command-line tools for generation, replay, and benchmarking
+- RDF N-Triples Support: Parses SAREF ontology-compliant sensor data
+- Kvasir Integration: Direct insertion into Kvasir timeseries database
+- Latency Benchmarking: Measure query performance for time-range requests
+- TypeScript: Full type safety and modern development experience
+- CLI Interface: Command-line tools for generation, replay, and benchmarking
 
 ## Installation
 
@@ -124,34 +125,34 @@ npm test
 ## Streaming Modes Explained
 
 ### Historical Replay Mode
-- **Use Case**: Replaying historical sensor data maintaining original temporal relationships
-- **Behavior**: Respects original timestamps, applies time acceleration factor
-- **Example**: 1 hour of historical data replayed in 6 minutes (10x acceleration)
+- Use Case: Replaying historical sensor data maintaining original temporal relationships
+- Behavior: Respects original timestamps, applies time acceleration factor
+- Example: 1 hour of historical data replayed in 6 minutes (10x acceleration)
 ```bash
 npm run demo replay -- --acceleration 10 --file historical-data.nt
 ```
 
 ### Real-time Frequency Mode  
-- **Use Case**: Generating live sensor data streams at precise frequencies
-- **Behavior**: Ignores historical timestamps, creates events at exact intervals from "now"
-- **Example**: 4Hz stream means events every 250ms starting immediately
+- Use Case: Generating live sensor data streams at precise frequencies
+- Behavior: Ignores historical timestamps, creates events at exact intervals from "now"
+- Example: 4Hz stream means events every 250ms starting immediately
 ```bash
 npm run demo stream -- --frequency 4 --duration 60 --file sensor-data.nt
 ```
 
 ### Bulk Upload Mode
-- **Use Case**: Fast import of large datasets (hours/days of historical data)
-- **Behavior**: Uploads data in large batches for maximum throughput
-- **Example**: Upload 1 hour of 4Hz data (14,400 events) in 15 batches of 1000 events each
+- Use Case: Fast import of large datasets (hours/days of historical data)
+- Behavior: Uploads data in large batches for maximum throughput
+- Example: Upload 1 hour of 4Hz data (14,400 events) in 15 batches of 1000 events each
 ```bash
 npm run demo bulk -- --batch-size 1000 --delay 100 --file large-dataset.nt
 ```
 
 ### GraphQL Subscription Mode
-- **Use Case**: Real-time subscription to live sensor measurements
-- **Behavior**: Connects via WebSocket to GraphQL endpoint for real-time event streaming
-- **Features**: Automatic reconnection, sensor-specific filtering, error handling
-- **Example**: Subscribe to all measurements or specific sensor data
+- Use Case: Real-time subscription to live sensor measurements
+- Behavior: Connects via WebSocket to GraphQL endpoint for real-time event streaming
+- Features: Automatic reconnection, sensor-specific filtering, error handling
+- Example: Subscribe to all measurements or specific sensor data
 ```typescript
 import { KvasirClient } from 'kvasir-stream-replayer';
 
@@ -172,10 +173,10 @@ allSubscription.unsubscribe();
 ```
 
 ### Polling Subscription Mode (Alternative)
-- **Use Case**: Real-time subscription using existing ClickHouse API (works without GraphQL)
-- **Behavior**: Periodically polls ClickHouse for new measurements since last check
-- **Features**: Works with existing infrastructure, configurable polling interval, automatic timestamp tracking
-- **Example**: Poll-based subscription that mimics real-time behavior
+- Use Case: Real-time subscription using existing ClickHouse API (works without GraphQL)
+- Behavior: Periodically polls ClickHouse for new measurements since last check
+- Features: Works with existing infrastructure, configurable polling interval, automatic timestamp tracking
+- Example: Poll-based subscription that mimics real-time behavior
 ```bash
 # Subscribe to all measurements using polling
 npm run demo subscribe-polling --interval 2000
@@ -188,11 +189,11 @@ npm run example:polling
 ```
 
 ### Server-Sent Events (SSE) Subscription Mode (Recommended)
-- **Use Case**: True real-time subscription to Kvasir's change stream
-- **Behavior**: Connects to Kvasir's SSE endpoint for instant change notifications
-- **Features**: True real-time streaming, automatic reconnection, no polling overhead
-- **Requirements**: Kvasir server with SSE endpoint enabled
-- **Example**: SSE-based subscription for maximum real-time performance
+- Use Case: True real-time subscription to Kvasir's change stream
+- Behavior: Connects to Kvasir's SSE endpoint for instant change notifications
+- Features: True real-time streaming, automatic reconnection, no polling overhead
+- Requirements: Kvasir server with SSE endpoint enabled
+- Example: SSE-based subscription for maximum real-time performance
 ```bash
 # Subscribe to all measurements using SSE
 npm run demo subscribe-sse
@@ -260,10 +261,10 @@ console.log('95th percentile:', result.summary.p95Latency, 'ms');
 
 ### 🆕 Decoupled Real-Time Producer & Subscriber (Recommended for realistic testing)
 
-**Why separate scripts?** Previous benchmarks generated events and subscribed in the same process, creating artificial "batching". The new architecture **decouples** event generation from subscription, simulating real-world IoT scenarios.
+Why separate scripts? Previous benchmarks generated events and subscribed in the same process, creating artificial "batching". The new architecture decouples event generation from subscription, simulating real-world IoT scenarios.
 
 #### Real-Time Event Producer
-Continuously generates events **one at a time** (no batching), simulating real IoT sensors:
+Continuously generates events one at a time (no batching), simulating real IoT sensors:
 
 ```bash
 # Generate 1 event per second from 3 sensors (default)
@@ -277,7 +278,7 @@ npm run example:producer -- -f 100 -s 10 -d 60
 ```
 
 #### Real-Time SSE Subscriber
-Independently subscribes to SSE and measures **true end-to-end latency**:
+Independently subscribes to SSE and measures true end-to-end latency:
 
 ```bash
 # Subscribe and report every 10 seconds (default)
@@ -299,7 +300,7 @@ npm run example:producer -- -f 5 -s 5 -d 120
 npm run example:subscriber -- -r 10 -d 120
 ```
 
-**Output example:**
+Output example:
 ```
 === Latency Report ===
   Events received: 253
@@ -311,17 +312,17 @@ npm run example:subscriber -- -r 10 -d 120
 ========================
 ```
 
-📚 **[Full Real-Time Producer/Subscriber Guide →](./examples/REALTIME-GUIDE.md)**
+📚 [Full Real-Time Producer/Subscriber Guide →](./examples/REALTIME-GUIDE.md)
 
 ## Architecture
 
 The library consists of several key components:
 
-- **NTGenerator**: Creates synthetic sensor data in N-Triples format
-- **Replayer**: Multi-mode streaming engine (historical/frequency/bulk)
-- **KvasirClient**: REST API client for Kvasir timeseries operations + GraphQL subscriptions
-- **LatencyBenchmark**: Measures query performance across different time windows
-- **SSELatencyBenchmark**: Measures end-to-end latency from event generation to SSE reception
+- NTGenerator: Creates synthetic sensor data in N-Triples format
+- Replayer: Multi-mode streaming engine (historical/frequency/bulk)
+- KvasirClient: REST API client for Kvasir timeseries operations + GraphQL subscriptions
+- LatencyBenchmark: Measures query performance across different time windows
+- SSELatencyBenchmark: Measures end-to-end latency from event generation to SSE reception
 
 
 ## License
