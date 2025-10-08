@@ -64,6 +64,7 @@ export interface LatencyTestResult {
   queryType: string;
   success: boolean;
   error?: string;
+  data?: string; // Raw response data for parsing measurements
 }
 
 export interface NTripleStatement {
@@ -83,4 +84,40 @@ export interface PerformanceMetrics {
     cpuUsage: number;
     timestamp: Date;
   }[];
+}
+
+// GraphQL Subscription Types
+export interface MeasurementSubscription {
+  id: string;
+  value: number | string | boolean;
+  timestamp: string; // ISO date string
+  sensorId?: string;
+  propertyType?: string;
+  metadata?: Record<string, any>;
+}
+
+export interface SubscriptionConfig {
+  sensorId?: string; // Optional: subscribe to specific sensor
+  reconnectAttempts?: number; // Number of reconnection attempts (default: 5)
+  reconnectInterval?: number; // Reconnection interval in ms (default: 3000)
+  connectionTimeout?: number; // Connection timeout in ms (default: 10000)
+}
+
+export interface SubscriptionClient {
+  unsubscribe(): void;
+  onError(callback: (error: Error) => void): void;
+  onReconnect(callback: () => void): void;
+  onDisconnect(callback: () => void): void;
+}
+
+export interface GraphQLSubscriptionResponse {
+  data?: {
+    measurementsAdded?: MeasurementSubscription[];
+    allMeasurementsAdded?: MeasurementSubscription[];
+  };
+  errors?: Array<{
+    message: string;
+    locations?: Array<{ line: number; column: number }>;
+    path?: string[];
+  }>;
 }

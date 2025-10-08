@@ -1,18 +1,14 @@
 // Main Kvasir Replayer Library
-export { KvasirReplayer } from './replayer';
 export { KvasirClient } from './kvasir-client';
-export { RDFParser } from './rdf-utils';
 export { LatencyBenchmark } from './latency-benchmark';
 export { NTDataGenerator } from './nt-generator';
+export { RDFParser } from './rdf-utils';
+export { KvasirReplayer } from './replayer';
 
 // Types
 export * from './types';
 
 // Re-export for convenience
 export {
-  ReplayerConfig,
-  TimeseriesDataPoint,
-  LatencyTestResult,
-  PerformanceMetrics,
-  KvasirChangeRequest
+    GraphQLSubscriptionResponse, KvasirChangeRequest, LatencyTestResult, MeasurementSubscription, PerformanceMetrics, ReplayerConfig, SubscriptionClient, SubscriptionConfig, TimeseriesDataPoint
 } from './types';

@@ -1,10 +1,10 @@
 #!/usr/bin/env ts-node
 
 import { Command } from 'commander';
-import { KvasirReplayer } from './replayer';
 import { KvasirClient } from './kvasir-client';
 import { LatencyBenchmark } from './latency-benchmark';
 import { NTDataGenerator } from './nt-generator';
+import { KvasirReplayer } from './replayer';
 import { ReplayerConfig } from './types';
 
 const program = new Command();
@@ -377,6 +377,308 @@ program
       console.error('Demo failed:', error.message);
       process.exit(1);
     }
+  });
+
+// Subscribe to real-time measurements using polling
+program
+  .command('subscribe-polling')
+  .description('Subscribe to real-time measurements using polling (works with ClickHouse)')
+  .option('-u, --url <url>', 'Kvasir URL (for WebSocket, will be converted)', 'http://localhost:8080')
+  .option('-p, --pod <name>', 'Pod name', 'alice')
+  .option('-s, --sensor-id <id>', 'Specific sensor ID to subscribe to (optional)')
+  .option('-i, --interval <ms>', 'Polling interval in milliseconds', '1000')
+  .option('-w, --window <seconds>', 'Lookback window in seconds', '10')
+  .option('-c, --clickhouse-url <url>', 'ClickHouse URL', 'http://localhost:8123')
+  .option('-d, --database-id <id>', 'ClickHouse database ID', 'c2d7dd29a08e40f4')
+  .action(async (options) => {
+    console.log('KVASIR POLLING SUBSCRIPTION');
+    console.log('===========================');
+    console.log(`Kvasir URL: ${options.url}`);
+    console.log(`Pod: ${options.pod}`);
+    console.log(`ClickHouse URL: ${options.clickhouseUrl}`);
+    console.log(`Database ID: ${options.databaseId}`);
+    console.log(`Polling Interval: ${options.interval}ms`);
+    console.log(`Lookback Window: ${options.window}s`);
+
+    if (options.sensorId) {
+      console.log(`Subscribing to measurements from sensor: ${options.sensorId}`);
+    } else {
+      console.log('Subscribing to ALL measurements');
+    }
+    console.log('');
+
+    const client = new KvasirClient(options.url, options.pod);
+
+    let measurementCount = 0;
+    let startTime = Date.now();
+
+    const subscriptionConfig = {
+      pollingInterval: parseInt(options.interval),
+      lookbackWindow: parseInt(options.window),
+      clickhouseUrl: options.clickhouseUrl,
+      databaseId: options.databaseId,
+      sensorId: options.sensorId
+    };
+
+    let subscription: any;
+
+    if (options.sensorId) {
+      console.log(`Starting polling subscription for sensor: ${options.sensorId}`);
+      subscription = client.subscribeToMeasurementsPolling(
+        (measurement) => {
+          measurementCount++;
+          const elapsed = (Date.now() - startTime) / 1000;
+          console.log(`[${elapsed.toFixed(1)}s] Sensor ${measurement.sensorId}: ${measurement.value} at ${measurement.timestamp}`);
+        },
+        subscriptionConfig
+      );
+    } else {
+      console.log('Starting polling subscription for ALL measurements...');
+      subscription = client.subscribeToAllMeasurementsPolling(
+        (measurement) => {
+          measurementCount++;
+          const elapsed = (Date.now() - startTime) / 1000;
+          console.log(`[${elapsed.toFixed(1)}s] Sensor ${measurement.sensorId}: ${measurement.value} at ${measurement.timestamp}`);
+        },
+        subscriptionConfig
+      );
+    }
+
+    // Set up event handlers
+    subscription.onError((error: Error) => {
+      console.error('Polling subscription error:', error.message);
+    });
+
+    subscription.onReconnect(() => {
+      console.log('Polling subscription reconnected');
+    });
+
+    subscription.onDisconnect(() => {
+      console.log('Polling subscription disconnected');
+    });
+
+    console.log('Polling subscription active. Press Ctrl+C to stop...');
+    console.log('');
+
+    // Handle graceful shutdown
+    process.on('SIGINT', () => {
+      console.log('');
+      console.log('Stopping polling subscription...');
+      subscription.unsubscribe();
+      console.log(`Total measurements received: ${measurementCount}`);
+      process.exit(0);
+    });
+
+    // Keep the process running
+    await new Promise(() => {}); // Never resolves
+  });
+
+// Subscribe to real-time measurements using Server-Sent Events (SSE)
+program
+  .command('subscribe-sse')
+  .description('Subscribe to real-time measurements using Server-Sent Events (SSE)')
+  .option('-u, --url <url>', 'Kvasir URL', 'http://localhost:8080')
+  .option('-p, --pod <name>', 'Pod name', 'alice')
+  .option('-s, --sensor-id <id>', 'Specific sensor ID to subscribe to (optional)')
+  .option('-r, --reconnect-attempts <count>', 'Number of reconnection attempts', '5')
+  .option('-i, --reconnect-interval <ms>', 'Reconnection interval in milliseconds', '3000')
+  .action(async (options) => {
+    console.log('KVASIR SSE SUBSCRIPTION');
+    console.log('=======================');
+    console.log(`Kvasir URL: ${options.url}`);
+    console.log(`Pod: ${options.pod}`);
+
+    if (options.sensorId) {
+      console.log(`Subscribing to measurements from sensor: ${options.sensorId}`);
+    } else {
+      console.log('Subscribing to ALL measurements');
+    }
+    console.log('');
+
+    const client = new KvasirClient(options.url, options.pod);
+
+    let measurementCount = 0;
+    let changeCount = 0;
+    const startTime = Date.now();
+
+    const subscriptionConfig = {
+      reconnectAttempts: parseInt(options.reconnectAttempts),
+      reconnectInterval: parseInt(options.reconnectInterval)
+    };
+
+    let subscription: any;
+
+    if (options.sensorId) {
+      console.log(`Starting SSE subscription for sensor: ${options.sensorId}`);
+      subscription = client.subscribeToMeasurementsSSE(
+        (measurement) => {
+          measurementCount++;
+          const elapsed = (Date.now() - startTime) / 1000;
+          console.log(`[${elapsed.toFixed(1)}s] Measurement #${measurementCount}:`);
+          console.log(`  Sensor: ${measurement.sensorId || 'Unknown'}`);
+          console.log(`  Value: ${measurement.value}`);
+          console.log(`  Timestamp: ${measurement.timestamp}`);
+          console.log(`  Property: ${measurement.propertyType || 'Unknown'}`);
+          console.log('');
+        },
+        { ...subscriptionConfig, sensorId: options.sensorId }
+      );
+    } else {
+      console.log('Starting SSE subscription for ALL measurements...');
+      subscription = client.subscribeToAllMeasurementsSSE(
+        (measurement) => {
+          measurementCount++;
+          const elapsed = (Date.now() - startTime) / 1000;
+          console.log(`[${elapsed.toFixed(1)}s] Measurement #${measurementCount}:`);
+          console.log(`  Sensor: ${measurement.sensorId || 'Unknown'}`);
+          console.log(`  Value: ${measurement.value}`);
+          console.log(`  Timestamp: ${measurement.timestamp}`);
+          console.log(`  Property: ${measurement.propertyType || 'Unknown'}`);
+          console.log('');
+        },
+        subscriptionConfig
+      );
+    }
+
+    // Also subscribe to raw changes for debugging
+    const changesSubscription = client.subscribeToChangesSSE(
+      (change) => {
+        changeCount++;
+        const elapsed = (Date.now() - startTime) / 1000;
+        console.log(`[${elapsed.toFixed(1)}s] Raw Change #${changeCount}:`);
+        console.log(`  Change ID: ${change['@id']}`);
+        console.log(`  Timestamp: ${change['https://kvasir.discover.ilabt.imec.be/vocab#timestamp']}`);
+        if (change.insert && change.insert.length > 0) {
+          console.log(`  Inserts: ${change.insert.length} items`);
+        }
+        if (change.delete && change.delete.length > 0) {
+          console.log(`  Deletes: ${change.delete.length} items`);
+        }
+        console.log('');
+      },
+      subscriptionConfig
+    );
+
+    // Set up event handlers
+    subscription.onError((error: Error) => {
+      console.error('SSE subscription error:', error.message);
+    });
+
+    subscription.onReconnect(() => {
+      console.log('SSE subscription reconnected');
+    });
+
+    subscription.onDisconnect(() => {
+      console.log('SSE subscription disconnected');
+    });
+
+    changesSubscription.onError((error: Error) => {
+      console.error('Changes SSE subscription error:', error.message);
+    });
+
+    console.log('SSE subscriptions active. Press Ctrl+C to stop...');
+    console.log('Note: This will show both raw changes and converted measurements');
+    console.log('');
+
+    // Handle graceful shutdown
+    process.on('SIGINT', () => {
+      console.log('');
+      console.log('Stopping SSE subscriptions...');
+      subscription.unsubscribe();
+      changesSubscription.unsubscribe();
+      console.log(`Total measurements received: ${measurementCount}`);
+      console.log(`Total changes received: ${changeCount}`);
+      process.exit(0);
+    });
+
+    // Keep the process running
+    await new Promise(() => {}); // Never resolves
+  });
+
+// Subscribe to real-time measurements
+program
+  .command('subscribe')
+  .description('Subscribe to real-time measurements via GraphQL')
+  .option('-u, --url <url>', 'Kvasir GraphQL WebSocket URL', 'ws://localhost:8080/graphql')
+  .option('-p, --pod <name>', 'Pod name', 'alice')
+  .option('--sensor-id <id>', 'Specific sensor ID to subscribe to (optional)')
+  .option('--reconnect-attempts <number>', 'Number of reconnection attempts', '5')
+  .option('--reconnect-interval <ms>', 'Reconnection interval in ms', '3000')
+  .action(async (options) => {
+    console.log('KVASIR REAL-TIME MEASUREMENT SUBSCRIPTION');
+    console.log('========================================');
+    console.log(`WebSocket URL: ${options.url}`);
+    console.log(`Pod: ${options.pod}`);
+
+    if (options.sensorId) {
+      console.log(`Sensor ID: ${options.sensorId}`);
+    } else {
+      console.log('Subscribing to ALL measurements');
+    }
+    console.log('');
+
+    const client = new KvasirClient(options.url.replace(/^ws/, 'http'), options.pod);
+
+    let measurementCount = 0;
+    let startTime = Date.now();
+
+    const subscriptionConfig = {
+      reconnectAttempts: parseInt(options.reconnectAttempts),
+      reconnectInterval: parseInt(options.reconnectInterval)
+    };
+
+    let subscription: any;
+
+    if (options.sensorId) {
+      console.log(`Subscribing to measurements from sensor: ${options.sensorId}`);
+      subscription = client.subscribeToMeasurements(
+        options.sensorId,
+        (measurement) => {
+          measurementCount++;
+          const elapsed = (Date.now() - startTime) / 1000;
+          console.log(`[${elapsed.toFixed(1)}s] Sensor ${measurement.sensorId}: ${measurement.value} at ${measurement.timestamp}`);
+        },
+        subscriptionConfig
+      );
+    } else {
+      console.log('Subscribing to ALL measurements...');
+      subscription = client.subscribeToAllMeasurements(
+        (measurement) => {
+          measurementCount++;
+          const elapsed = (Date.now() - startTime) / 1000;
+          console.log(`[${elapsed.toFixed(1)}s] Sensor ${measurement.sensorId}: ${measurement.value} at ${measurement.timestamp}`);
+        },
+        subscriptionConfig
+      );
+    }
+
+    // Set up event handlers
+    subscription.onError((error: Error) => {
+      console.error('Subscription error:', error.message);
+    });
+
+    subscription.onReconnect(() => {
+      console.log('Reconnected to subscription');
+    });
+
+    subscription.onDisconnect(() => {
+      console.log('Subscription disconnected');
+    });
+
+    console.log('Subscription active. Press Ctrl+C to stop...');
+    console.log('');
+
+    // Handle graceful shutdown
+    process.on('SIGINT', () => {
+      console.log('');
+      console.log('Stopping subscription...');
+      subscription.unsubscribe();
+      console.log(`Total measurements received: ${measurementCount}`);
+      process.exit(0);
+    });
+
+    // Keep the process running
+    await new Promise(() => {}); // Never resolves
   });
 
 // Parse command line arguments

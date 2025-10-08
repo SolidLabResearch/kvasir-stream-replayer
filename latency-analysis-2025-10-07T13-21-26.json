@@ -1,0 +1,6399 @@
+{
+  "timestamp": "2025-10-07T13:21:26.604Z",
+  "config": {
+    "sensorIds": [
+      "TemperatureSensor1",
+      "HumiditySensor1",
+      "PressureSensor1",
+      "LightSensor1",
+      "CO2Sensor1"
+    ],
+    "testDuration": 30,
+    "eventInterval": 500,
+    "maxLatencySamples": 200
+  },
+  "results": {
+    "samples": [
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:42.046Z",
+        "receivedAt": "2025-10-07T13:20:55.404Z",
+        "totalLatencyMs": 13358,
+        "spans": {
+          "queueTime": 1350,
+          "computeTime": 2.1799531970035604,
+          "ioTime": 45.232375,
+          "externalCallTime": 45.232375,
+          "gcTime": 0.44621018850653726,
+          "tlsHandshakeTime": 107.27229052817881,
+          "dnsTime": 3.856848728568054,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 0,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 112.16180951467564
+        },
+        "percentiles": {
+          "p50": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:42.091Z",
+        "receivedAt": "2025-10-07T13:20:55.405Z",
+        "totalLatencyMs": 13314,
+        "spans": {
+          "queueTime": 1340,
+          "computeTime": 4.233611949839233,
+          "ioTime": 10.203792,
+          "externalCallTime": 10.203792,
+          "gcTime": 0.8442024281527645,
+          "tlsHandshakeTime": 145.67725471546953,
+          "dnsTime": 3.402051212406678,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 1,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 130.7260790838806
+        },
+        "percentiles": {
+          "p50": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:42.101Z",
+        "receivedAt": "2025-10-07T13:20:55.405Z",
+        "totalLatencyMs": 13304,
+        "spans": {
+          "queueTime": 1330,
+          "computeTime": 1.7702464818242416,
+          "ioTime": 9.37175,
+          "externalCallTime": 9.37175,
+          "gcTime": 0.1302094291410998,
+          "tlsHandshakeTime": 80.72308742242222,
+          "dnsTime": 7.814481798934025,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 2,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 113.41761773028267
+        },
+        "percentiles": {
+          "p50": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:42.111Z",
+        "receivedAt": "2025-10-07T13:20:55.405Z",
+        "totalLatencyMs": 13294,
+        "spans": {
+          "queueTime": 1320,
+          "computeTime": 4.226990156690498,
+          "ioTime": 6.789,
+          "externalCallTime": 6.789,
+          "gcTime": 1.005611859560017,
+          "tlsHandshakeTime": 60.52121864922939,
+          "dnsTime": 3.3351294780749763,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 204,
+          "concurrency": 3,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 165.02095568769403
+        },
+        "percentiles": {
+          "p50": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:42.118Z",
+        "receivedAt": "2025-10-07T13:20:55.405Z",
+        "totalLatencyMs": 13287,
+        "spans": {
+          "queueTime": 1310,
+          "computeTime": 1.234514031520906,
+          "ioTime": 7.35375,
+          "externalCallTime": 7.35375,
+          "gcTime": 0.3774914634695694,
+          "tlsHandshakeTime": 111.07947776462161,
+          "dnsTime": 11.237266397610082,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 201,
+          "concurrency": 4,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 185.208776302569
+        },
+        "percentiles": {
+          "p50": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:42.547Z",
+        "receivedAt": "2025-10-07T13:20:55.405Z",
+        "totalLatencyMs": 12858,
+        "spans": {
+          "queueTime": 1300,
+          "computeTime": 3.986248280813678,
+          "ioTime": 8.610542,
+          "externalCallTime": 8.610542,
+          "gcTime": 1.3784519021542896,
+          "tlsHandshakeTime": 115.64149604517165,
+          "dnsTime": 11.84297457267579,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 5,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 101.15793967625706
+        },
+        "percentiles": {
+          "p50": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:42.555Z",
+        "receivedAt": "2025-10-07T13:20:55.405Z",
+        "totalLatencyMs": 12850,
+        "spans": {
+          "queueTime": 1290,
+          "computeTime": 3.0037999065566456,
+          "ioTime": 6.879791,
+          "externalCallTime": 6.879791,
+          "gcTime": 0.06055267451469826,
+          "tlsHandshakeTime": 120.08608040192928,
+          "dnsTime": 18.90779561068133,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 6,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 119.06356708795359
+        },
+        "percentiles": {
+          "p50": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:42.562Z",
+        "receivedAt": "2025-10-07T13:20:55.405Z",
+        "totalLatencyMs": 12843,
+        "spans": {
+          "queueTime": 1280,
+          "computeTime": 3.628982520024846,
+          "ioTime": 7.10425,
+          "externalCallTime": 7.10425,
+          "gcTime": 0.5438171441675079,
+          "tlsHandshakeTime": 58.90393935914851,
+          "dnsTime": 2.7441178291065693,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 213,
+          "concurrency": 7,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 73.90892580755306
+        },
+        "percentiles": {
+          "p50": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:42.569Z",
+        "receivedAt": "2025-10-07T13:20:55.405Z",
+        "totalLatencyMs": 12836,
+        "spans": {
+          "queueTime": 1270,
+          "computeTime": 3.736141579088547,
+          "ioTime": 7.576625,
+          "externalCallTime": 7.576625,
+          "gcTime": 1.4061061758576643,
+          "tlsHandshakeTime": 91.34905107427318,
+          "dnsTime": 9.756449821881056,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 207,
+          "concurrency": 8,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 121.32266735536068
+        },
+        "percentiles": {
+          "p50": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:42.577Z",
+        "receivedAt": "2025-10-07T13:20:55.405Z",
+        "totalLatencyMs": 12828,
+        "spans": {
+          "queueTime": 1260,
+          "computeTime": 2.3064349180697366,
+          "ioTime": 8.998333,
+          "externalCallTime": 8.998333,
+          "gcTime": 1.6202104522256366,
+          "tlsHandshakeTime": 55.09158847953268,
+          "dnsTime": 14.234360347931453,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 9,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 133.8273283248481
+        },
+        "percentiles": {
+          "p50": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:43.048Z",
+        "receivedAt": "2025-10-07T13:20:55.772Z",
+        "totalLatencyMs": 12724,
+        "spans": {
+          "queueTime": 1300,
+          "computeTime": 4.292331948210339,
+          "ioTime": 6.1335,
+          "externalCallTime": 6.1335,
+          "gcTime": 1.9489754101604504,
+          "tlsHandshakeTime": 108.72753146206895,
+          "dnsTime": 0.8533487260815775,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 219,
+          "concurrency": 10,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 156.5447699101255
+        },
+        "percentiles": {
+          "p50": 13287,
+          "p90": 13358,
+          "p95": 13358,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:43.055Z",
+        "receivedAt": "2025-10-07T13:20:55.772Z",
+        "totalLatencyMs": 12717,
+        "spans": {
+          "queueTime": 1290,
+          "computeTime": 2.1064605239644134,
+          "ioTime": 7.758166,
+          "externalCallTime": 7.758166,
+          "gcTime": 0.3542480350339421,
+          "tlsHandshakeTime": 140.36675560419496,
+          "dnsTime": 6.086014582833181,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 209,
+          "concurrency": 11,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 139.39203011111493
+        },
+        "percentiles": {
+          "p50": 12858,
+          "p90": 13314,
+          "p95": 13358,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:43.062Z",
+        "receivedAt": "2025-10-07T13:20:55.772Z",
+        "totalLatencyMs": 12710,
+        "spans": {
+          "queueTime": 1280,
+          "computeTime": 3.3292865813262553,
+          "ioTime": 12.215292,
+          "externalCallTime": 12.215292,
+          "gcTime": 1.7009711134004215,
+          "tlsHandshakeTime": 75.95436951108428,
+          "dnsTime": 18.261736501312427,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 12,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 96.83311020321494
+        },
+        "percentiles": {
+          "p50": 12858,
+          "p90": 13314,
+          "p95": 13358,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:43.075Z",
+        "receivedAt": "2025-10-07T13:20:55.772Z",
+        "totalLatencyMs": 12697,
+        "spans": {
+          "queueTime": 1270,
+          "computeTime": 5.888778701033774,
+          "ioTime": 8.61675,
+          "externalCallTime": 8.61675,
+          "gcTime": 1.9994245384101306,
+          "tlsHandshakeTime": 120.43656548916712,
+          "dnsTime": 19.61860821240613,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 206,
+          "concurrency": 13,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 122.67330813325698
+        },
+        "percentiles": {
+          "p50": 12850,
+          "p90": 13314,
+          "p95": 13358,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:43.083Z",
+        "receivedAt": "2025-10-07T13:20:55.772Z",
+        "totalLatencyMs": 12689,
+        "spans": {
+          "queueTime": 1260,
+          "computeTime": 4.1137294704520055,
+          "ioTime": 8.449416,
+          "externalCallTime": 8.449416,
+          "gcTime": 0.9352561507039665,
+          "tlsHandshakeTime": 84.0790667234314,
+          "dnsTime": 16.140065026689292,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 14,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 143.67370955355761
+        },
+        "percentiles": {
+          "p50": 12850,
+          "p90": 13314,
+          "p95": 13358,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:43.548Z",
+        "receivedAt": "2025-10-07T13:20:55.772Z",
+        "totalLatencyMs": 12224,
+        "spans": {
+          "queueTime": 1250,
+          "computeTime": 4.4212099018394815,
+          "ioTime": 541.286167,
+          "externalCallTime": 541.286167,
+          "gcTime": 0.5379997357193744,
+          "tlsHandshakeTime": 111.56852665641131,
+          "dnsTime": 6.976302862576604,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 219,
+          "concurrency": 15,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 243.7045650411949
+        },
+        "percentiles": {
+          "p50": 12843,
+          "p90": 13314,
+          "p95": 13358,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:44.048Z",
+        "receivedAt": "2025-10-07T13:20:55.772Z",
+        "totalLatencyMs": 11724,
+        "spans": {
+          "queueTime": 1240,
+          "computeTime": 2.044839292797759,
+          "ioTime": 190.990458,
+          "externalCallTime": 190.990458,
+          "gcTime": 0.10267125904579677,
+          "tlsHandshakeTime": 103.31639404564277,
+          "dnsTime": 11.001019566660514,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 219,
+          "concurrency": 16,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 169.13165808542172
+        },
+        "percentiles": {
+          "p50": 12843,
+          "p90": 13314,
+          "p95": 13358,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:44.089Z",
+        "receivedAt": "2025-10-07T13:20:55.772Z",
+        "totalLatencyMs": 11683,
+        "spans": {
+          "queueTime": 1230,
+          "computeTime": 1.734800952427449,
+          "ioTime": 151.014208,
+          "externalCallTime": 151.014208,
+          "gcTime": 0.3185698517443911,
+          "tlsHandshakeTime": 83.3919742904218,
+          "dnsTime": 3.782726059076311,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 17,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 195.6818982142824
+        },
+        "percentiles": {
+          "p50": 12836,
+          "p90": 13314,
+          "p95": 13358,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:44.240Z",
+        "receivedAt": "2025-10-07T13:20:55.772Z",
+        "totalLatencyMs": 11532,
+        "spans": {
+          "queueTime": 1220,
+          "computeTime": 5.271787031431598,
+          "ioTime": 17.553334,
+          "externalCallTime": 17.553334,
+          "gcTime": 0.2578745420750388,
+          "tlsHandshakeTime": 93.8744972891032,
+          "dnsTime": 17.60818407120617,
+          "coldStartTime": 286.65820693318534
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 18,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": false,
+          "downstreamLatency": 161.16352523807655
+        },
+        "percentiles": {
+          "p50": 12836,
+          "p90": 13314,
+          "p95": 13358,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:44.239Z",
+        "receivedAt": "2025-10-07T13:20:55.772Z",
+        "totalLatencyMs": 11533,
+        "spans": {
+          "queueTime": 1210,
+          "computeTime": 3.0097214922434614,
+          "ioTime": 34.889375,
+          "externalCallTime": 34.889375,
+          "gcTime": 1.199453697416513,
+          "tlsHandshakeTime": 92.83680616219421,
+          "dnsTime": 14.100976589265182,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 19,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 84.86965867285967
+        },
+        "percentiles": {
+          "p50": 12828,
+          "p90": 13314,
+          "p95": 13358,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:44.274Z",
+        "receivedAt": "2025-10-07T13:20:55.772Z",
+        "totalLatencyMs": 11498,
+        "spans": {
+          "queueTime": 1200,
+          "computeTime": 4.585547459635664,
+          "ioTime": 19.872292,
+          "externalCallTime": 19.872292,
+          "gcTime": 0.2616581118087966,
+          "tlsHandshakeTime": 104.84560761817283,
+          "dnsTime": 11.264253232784473,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 213,
+          "concurrency": 20,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 241.76949930919997
+        },
+        "percentiles": {
+          "p50": 12828,
+          "p90": 13314,
+          "p95": 13358,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:44.258Z",
+        "receivedAt": "2025-10-07T13:20:55.772Z",
+        "totalLatencyMs": 11514,
+        "spans": {
+          "queueTime": 1190,
+          "computeTime": 5.365931257319558,
+          "ioTime": 45.158708,
+          "externalCallTime": 45.158708,
+          "gcTime": 1.3030271255205363,
+          "tlsHandshakeTime": 136.07981949244834,
+          "dnsTime": 0.5667006767216476,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 206,
+          "concurrency": 21,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 113.55342402325985
+        },
+        "percentiles": {
+          "p50": 12724,
+          "p90": 13304,
+          "p95": 13314,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:44.303Z",
+        "receivedAt": "2025-10-07T13:20:55.772Z",
+        "totalLatencyMs": 11469,
+        "spans": {
+          "queueTime": 1180,
+          "computeTime": 5.7877932317057095,
+          "ioTime": 9.996334,
+          "externalCallTime": 9.996334,
+          "gcTime": 1.1839392405810192,
+          "tlsHandshakeTime": 108.57214446663247,
+          "dnsTime": 1.6289617739420459,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 22,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 195.5884755795813
+        },
+        "percentiles": {
+          "p50": 12724,
+          "p90": 13304,
+          "p95": 13314,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:44.294Z",
+        "receivedAt": "2025-10-07T13:20:55.772Z",
+        "totalLatencyMs": 11478,
+        "spans": {
+          "queueTime": 1170,
+          "computeTime": 5.532779160574073,
+          "ioTime": 19.653542,
+          "externalCallTime": 19.653542,
+          "gcTime": 1.8077999136392378,
+          "tlsHandshakeTime": 90.89566358195127,
+          "dnsTime": 18.575633485469353,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 207,
+          "concurrency": 23,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 183.65859863629964
+        },
+        "percentiles": {
+          "p50": 12717,
+          "p90": 13304,
+          "p95": 13314,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:44.314Z",
+        "receivedAt": "2025-10-07T13:20:55.772Z",
+        "totalLatencyMs": 11458,
+        "spans": {
+          "queueTime": 1160,
+          "computeTime": 3.526718581315992,
+          "ioTime": 27.18775,
+          "externalCallTime": 27.18775,
+          "gcTime": 1.687057210577935,
+          "tlsHandshakeTime": 85.42209385462078,
+          "dnsTime": 15.821788980241053,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 203,
+          "concurrency": 24,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 188.8752760124594
+        },
+        "percentiles": {
+          "p50": 12717,
+          "p90": 13304,
+          "p95": 13314,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:44.549Z",
+        "receivedAt": "2025-10-07T13:20:55.772Z",
+        "totalLatencyMs": 11223,
+        "spans": {
+          "queueTime": 1150,
+          "computeTime": 2.0455607562201106,
+          "ioTime": 5.588792,
+          "externalCallTime": 5.588792,
+          "gcTime": 0.10945118904422069,
+          "tlsHandshakeTime": 98.26692313352099,
+          "dnsTime": 12.009005361666691,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 25,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 177.30727602738165
+        },
+        "percentiles": {
+          "p50": 12710,
+          "p90": 13304,
+          "p95": 13314,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:44.555Z",
+        "receivedAt": "2025-10-07T13:20:55.773Z",
+        "totalLatencyMs": 11218,
+        "spans": {
+          "queueTime": 1140,
+          "computeTime": 5.810731735765698,
+          "ioTime": 5.401458,
+          "externalCallTime": 5.401458,
+          "gcTime": 0.6717851305513163,
+          "tlsHandshakeTime": 72.62896883687029,
+          "dnsTime": 0.14634234644038013,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 211,
+          "concurrency": 26,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": false,
+          "downstreamLatency": 238.58683592099146
+        },
+        "percentiles": {
+          "p50": 12710,
+          "p90": 13304,
+          "p95": 13314,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:44.560Z",
+        "receivedAt": "2025-10-07T13:20:55.773Z",
+        "totalLatencyMs": 11213,
+        "spans": {
+          "queueTime": 1130,
+          "computeTime": 1.4808362835012148,
+          "ioTime": 6.721042,
+          "externalCallTime": 6.721042,
+          "gcTime": 0.07017927269285806,
+          "tlsHandshakeTime": 124.81945041059478,
+          "dnsTime": 8.594071506062235,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 27,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 209.9522173367232
+        },
+        "percentiles": {
+          "p50": 12697,
+          "p90": 13304,
+          "p95": 13314,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:44.567Z",
+        "receivedAt": "2025-10-07T13:20:55.773Z",
+        "totalLatencyMs": 11206,
+        "spans": {
+          "queueTime": 1120,
+          "computeTime": 2.8842348411274212,
+          "ioTime": 11.938334,
+          "externalCallTime": 11.938334,
+          "gcTime": 0.1623724240914295,
+          "tlsHandshakeTime": 117.21041932418832,
+          "dnsTime": 14.29734483151349,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 206,
+          "concurrency": 28,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 63.82838242191946
+        },
+        "percentiles": {
+          "p50": 12697,
+          "p90": 13304,
+          "p95": 13314,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:44.579Z",
+        "receivedAt": "2025-10-07T13:20:55.773Z",
+        "totalLatencyMs": 11194,
+        "spans": {
+          "queueTime": 1110,
+          "computeTime": 5.12658543865658,
+          "ioTime": 5.944125,
+          "externalCallTime": 5.944125,
+          "gcTime": 0.4183131795234645,
+          "tlsHandshakeTime": 85.72519211356672,
+          "dnsTime": 6.9171457594246855,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 203,
+          "concurrency": 29,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": false,
+          "downstreamLatency": 118.31823169679878
+        },
+        "percentiles": {
+          "p50": 12689,
+          "p90": 13304,
+          "p95": 13314,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:45.050Z",
+        "receivedAt": "2025-10-07T13:20:55.773Z",
+        "totalLatencyMs": 10723,
+        "spans": {
+          "queueTime": 1100,
+          "computeTime": 5.725716410826724,
+          "ioTime": 6.5215,
+          "externalCallTime": 6.5215,
+          "gcTime": 0.8818615013285989,
+          "tlsHandshakeTime": 134.94490028840585,
+          "dnsTime": 13.13338281173968,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 30,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 186.36933453861957
+        },
+        "percentiles": {
+          "p50": 12689,
+          "p90": 13304,
+          "p95": 13314,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:45.056Z",
+        "receivedAt": "2025-10-07T13:20:55.773Z",
+        "totalLatencyMs": 10717,
+        "spans": {
+          "queueTime": 1090,
+          "computeTime": 5.341111373738285,
+          "ioTime": 5.889541,
+          "externalCallTime": 5.889541,
+          "gcTime": 0.2772603915378049,
+          "tlsHandshakeTime": 141.11167459392536,
+          "dnsTime": 17.538233196777853,
+          "coldStartTime": 598.9565312634415
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 213,
+          "concurrency": 31,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 122.11543416311166
+        },
+        "percentiles": {
+          "p50": 12224,
+          "p90": 13294,
+          "p95": 13314,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:45.062Z",
+        "receivedAt": "2025-10-07T13:20:55.773Z",
+        "totalLatencyMs": 10711,
+        "spans": {
+          "queueTime": 1080,
+          "computeTime": 5.016706261202556,
+          "ioTime": 12.532,
+          "externalCallTime": 12.532,
+          "gcTime": 0.6736686257937103,
+          "tlsHandshakeTime": 57.59554344875457,
+          "dnsTime": 13.56289841998031,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 32,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 160.2599514428788
+        },
+        "percentiles": {
+          "p50": 12224,
+          "p90": 13294,
+          "p95": 13314,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:45.075Z",
+        "receivedAt": "2025-10-07T13:20:55.773Z",
+        "totalLatencyMs": 10698,
+        "spans": {
+          "queueTime": 1070,
+          "computeTime": 2.1466946731207694,
+          "ioTime": 5.258167,
+          "externalCallTime": 5.258167,
+          "gcTime": 1.1165877472506622,
+          "tlsHandshakeTime": 101.76656667738317,
+          "dnsTime": 15.485553260620977,
+          "coldStartTime": 586.8993622203302
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 206,
+          "concurrency": 33,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 235.2591982083532
+        },
+        "percentiles": {
+          "p50": 11724,
+          "p90": 13294,
+          "p95": 13314,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:45.080Z",
+        "receivedAt": "2025-10-07T13:20:55.773Z",
+        "totalLatencyMs": 10693,
+        "spans": {
+          "queueTime": 1060,
+          "computeTime": 5.446595229189523,
+          "ioTime": 6.789208,
+          "externalCallTime": 6.789208,
+          "gcTime": 0.16328850849210363,
+          "tlsHandshakeTime": 104.65947822291454,
+          "dnsTime": 6.281750254598797,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 34,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 245.954578784796
+        },
+        "percentiles": {
+          "p50": 11724,
+          "p90": 13294,
+          "p95": 13314,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:45.551Z",
+        "receivedAt": "2025-10-07T13:20:55.773Z",
+        "totalLatencyMs": 10222,
+        "spans": {
+          "queueTime": 1050,
+          "computeTime": 1.6641863705418838,
+          "ioTime": 6.040708,
+          "externalCallTime": 6.040708,
+          "gcTime": 1.3418294494626108,
+          "tlsHandshakeTime": 59.523811548887906,
+          "dnsTime": 8.82763567725014,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 35,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 66.80607728397834
+        },
+        "percentiles": {
+          "p50": 11683,
+          "p90": 13294,
+          "p95": 13314,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:45.557Z",
+        "receivedAt": "2025-10-07T13:20:55.773Z",
+        "totalLatencyMs": 10216,
+        "spans": {
+          "queueTime": 1040,
+          "computeTime": 5.041575282508138,
+          "ioTime": 5.535042,
+          "externalCallTime": 5.535042,
+          "gcTime": 0.023745256491776612,
+          "tlsHandshakeTime": 81.25978626590029,
+          "dnsTime": 12.563195114608735,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 211,
+          "concurrency": 36,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 54.828436403147364
+        },
+        "percentiles": {
+          "p50": 11683,
+          "p90": 13294,
+          "p95": 13314,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:45.562Z",
+        "receivedAt": "2025-10-07T13:20:55.774Z",
+        "totalLatencyMs": 10212,
+        "spans": {
+          "queueTime": 1030,
+          "computeTime": 5.376062873745656,
+          "ioTime": 6.711,
+          "externalCallTime": 6.711,
+          "gcTime": 0.030960005879085095,
+          "tlsHandshakeTime": 110.22544690620275,
+          "dnsTime": 15.907693675444303,
+          "coldStartTime": 521.5990200108056
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 213,
+          "concurrency": 37,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 51.13989288584007
+        },
+        "percentiles": {
+          "p50": 11533,
+          "p90": 13294,
+          "p95": 13314,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:45.569Z",
+        "receivedAt": "2025-10-07T13:20:55.774Z",
+        "totalLatencyMs": 10205,
+        "spans": {
+          "queueTime": 1020,
+          "computeTime": 2.7102836868722604,
+          "ioTime": 5.545916,
+          "externalCallTime": 5.545916,
+          "gcTime": 1.6567188037666236,
+          "tlsHandshakeTime": 95.65124363384376,
+          "dnsTime": 18.429144129274523,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 207,
+          "concurrency": 38,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 58.67146961401089
+        },
+        "percentiles": {
+          "p50": 11533,
+          "p90": 13294,
+          "p95": 13314,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:45.575Z",
+        "receivedAt": "2025-10-07T13:20:55.774Z",
+        "totalLatencyMs": 10199,
+        "spans": {
+          "queueTime": 1010,
+          "computeTime": 5.715055741816366,
+          "ioTime": 5.222375,
+          "externalCallTime": 5.222375,
+          "gcTime": 0.8631246955886578,
+          "tlsHandshakeTime": 147.53369437366257,
+          "dnsTime": 3.169042461283098,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 39,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 196.72347489661348
+        },
+        "percentiles": {
+          "p50": 11532,
+          "p90": 13294,
+          "p95": 13314,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:46.052Z",
+        "receivedAt": "2025-10-07T13:20:55.774Z",
+        "totalLatencyMs": 9722,
+        "spans": {
+          "queueTime": 1000,
+          "computeTime": 1.359062480576231,
+          "ioTime": 5.595375,
+          "externalCallTime": 5.595375,
+          "gcTime": 0.4051450039122235,
+          "tlsHandshakeTime": 106.58290997074704,
+          "dnsTime": 19.042883671283818,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 40,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 105.76149401544677
+        },
+        "percentiles": {
+          "p50": 11532,
+          "p90": 13294,
+          "p95": 13314,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:46.058Z",
+        "receivedAt": "2025-10-07T13:20:55.774Z",
+        "totalLatencyMs": 9716,
+        "spans": {
+          "queueTime": 990,
+          "computeTime": 5.082778798482286,
+          "ioTime": 4.404917,
+          "externalCallTime": 4.404917,
+          "gcTime": 0.28945937889702433,
+          "tlsHandshakeTime": 85.11367472465194,
+          "dnsTime": 4.6111566566447415,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 41,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 52.955050818038885
+        },
+        "percentiles": {
+          "p50": 11514,
+          "p90": 13287,
+          "p95": 13304,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:46.062Z",
+        "receivedAt": "2025-10-07T13:20:55.774Z",
+        "totalLatencyMs": 9712,
+        "spans": {
+          "queueTime": 980,
+          "computeTime": 5.3746772513786105,
+          "ioTime": 5.769291,
+          "externalCallTime": 5.769291,
+          "gcTime": 1.225379758133267,
+          "tlsHandshakeTime": 148.65382322237343,
+          "dnsTime": 9.119897083469265,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 42,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 212.93000854462258
+        },
+        "percentiles": {
+          "p50": 11514,
+          "p90": 13287,
+          "p95": 13304,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:46.068Z",
+        "receivedAt": "2025-10-07T13:20:55.774Z",
+        "totalLatencyMs": 9706,
+        "spans": {
+          "queueTime": 970,
+          "computeTime": 3.4649194425535503,
+          "ioTime": 5.640208,
+          "externalCallTime": 5.640208,
+          "gcTime": 1.7117069326152556,
+          "tlsHandshakeTime": 100.62442928561305,
+          "dnsTime": 7.961311930830943,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 206,
+          "concurrency": 43,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 187.69716316496718
+        },
+        "percentiles": {
+          "p50": 11498,
+          "p90": 13287,
+          "p95": 13304,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:46.074Z",
+        "receivedAt": "2025-10-07T13:20:55.774Z",
+        "totalLatencyMs": 9700,
+        "spans": {
+          "queueTime": 960,
+          "computeTime": 4.519613734538762,
+          "ioTime": 8.207584,
+          "externalCallTime": 8.207584,
+          "gcTime": 1.8272102153260428,
+          "tlsHandshakeTime": 62.19383720957488,
+          "dnsTime": 18.583805812897513,
+          "coldStartTime": 810.7771658900631
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 44,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 225.06532171540212
+        },
+        "percentiles": {
+          "p50": 11498,
+          "p90": 13287,
+          "p95": 13304,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:46.553Z",
+        "receivedAt": "2025-10-07T13:20:55.774Z",
+        "totalLatencyMs": 9221,
+        "spans": {
+          "queueTime": 950,
+          "computeTime": 4.8948501652441205,
+          "ioTime": 8.108291,
+          "externalCallTime": 8.108291,
+          "gcTime": 1.504970587096111,
+          "tlsHandshakeTime": 67.42587392494994,
+          "dnsTime": 17.11834958884633,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 45,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 238.9863918085347
+        },
+        "percentiles": {
+          "p50": 11478,
+          "p90": 13287,
+          "p95": 13304,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:46.561Z",
+        "receivedAt": "2025-10-07T13:20:55.774Z",
+        "totalLatencyMs": 9213,
+        "spans": {
+          "queueTime": 940,
+          "computeTime": 4.207299836344926,
+          "ioTime": 5.67725,
+          "externalCallTime": 5.67725,
+          "gcTime": 0.08922453455340085,
+          "tlsHandshakeTime": 139.90478695077786,
+          "dnsTime": 8.654876980419663,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 46,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 95.54552717598224
+        },
+        "percentiles": {
+          "p50": 11478,
+          "p90": 13287,
+          "p95": 13304,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:46.567Z",
+        "receivedAt": "2025-10-07T13:20:55.774Z",
+        "totalLatencyMs": 9207,
+        "spans": {
+          "queueTime": 930,
+          "computeTime": 1.377488413357474,
+          "ioTime": 5.901,
+          "externalCallTime": 5.901,
+          "gcTime": 0.19075563323669442,
+          "tlsHandshakeTime": 67.00811698391308,
+          "dnsTime": 8.568752690291884,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 47,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 160.2989595106382
+        },
+        "percentiles": {
+          "p50": 11469,
+          "p90": 13287,
+          "p95": 13304,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:46.573Z",
+        "receivedAt": "2025-10-07T13:20:55.774Z",
+        "totalLatencyMs": 9201,
+        "spans": {
+          "queueTime": 920,
+          "computeTime": 3.0890177784317587,
+          "ioTime": 5.422,
+          "externalCallTime": 5.422,
+          "gcTime": 0.21508176349035368,
+          "tlsHandshakeTime": 56.58039723202983,
+          "dnsTime": 2.533722326108725,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 207,
+          "concurrency": 48,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 139.99842553041918
+        },
+        "percentiles": {
+          "p50": 11469,
+          "p90": 13287,
+          "p95": 13304,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:46.578Z",
+        "receivedAt": "2025-10-07T13:20:55.775Z",
+        "totalLatencyMs": 9197,
+        "spans": {
+          "queueTime": 910,
+          "computeTime": 5.379146841114036,
+          "ioTime": 8.980334,
+          "externalCallTime": 8.980334,
+          "gcTime": 0.4873126202806821,
+          "tlsHandshakeTime": 112.63274427115158,
+          "dnsTime": 13.099694788539722,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 203,
+          "concurrency": 49,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 224.12288135300776
+        },
+        "percentiles": {
+          "p50": 11458,
+          "p90": 13287,
+          "p95": 13304,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:47.056Z",
+        "receivedAt": "2025-10-07T13:20:55.775Z",
+        "totalLatencyMs": 8719,
+        "spans": {
+          "queueTime": 900,
+          "computeTime": 4.544628186283406,
+          "ioTime": 45.90325,
+          "externalCallTime": 45.90325,
+          "gcTime": 0.8779177851961055,
+          "tlsHandshakeTime": 120.25966584061575,
+          "dnsTime": 15.770430661438898,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 50,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 160.39103637777097
+        },
+        "percentiles": {
+          "p50": 11458,
+          "p90": 13287,
+          "p95": 13304,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:47.102Z",
+        "receivedAt": "2025-10-07T13:20:55.775Z",
+        "totalLatencyMs": 8673,
+        "spans": {
+          "queueTime": 890,
+          "computeTime": 1.116651701677929,
+          "ioTime": 11.988958,
+          "externalCallTime": 11.988958,
+          "gcTime": 1.7347393947100969,
+          "tlsHandshakeTime": 65.30767276239484,
+          "dnsTime": 11.358037966765808,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 51,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 57.59183328867894
+        },
+        "percentiles": {
+          "p50": 11223,
+          "p90": 12858,
+          "p95": 13304,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:47.114Z",
+        "receivedAt": "2025-10-07T13:20:55.775Z",
+        "totalLatencyMs": 8661,
+        "spans": {
+          "queueTime": 880,
+          "computeTime": 1.9012231863281006,
+          "ioTime": 8.19,
+          "externalCallTime": 8.19,
+          "gcTime": 0.07886471965513264,
+          "tlsHandshakeTime": 80.24449618619587,
+          "dnsTime": 18.476244612098146,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 52,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 132.87141251623785
+        },
+        "percentiles": {
+          "p50": 11223,
+          "p90": 12858,
+          "p95": 13304,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:47.123Z",
+        "receivedAt": "2025-10-07T13:20:55.775Z",
+        "totalLatencyMs": 8652,
+        "spans": {
+          "queueTime": 870,
+          "computeTime": 1.7063084196872405,
+          "ioTime": 8.547916,
+          "externalCallTime": 8.547916,
+          "gcTime": 1.3499961598411505,
+          "tlsHandshakeTime": 74.40193962599653,
+          "dnsTime": 9.08643548342432,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 207,
+          "concurrency": 53,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": false,
+          "downstreamLatency": 246.91119025732084
+        },
+        "percentiles": {
+          "p50": 11218,
+          "p90": 12858,
+          "p95": 13304,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:47.131Z",
+        "receivedAt": "2025-10-07T13:20:55.776Z",
+        "totalLatencyMs": 8645,
+        "spans": {
+          "queueTime": 860,
+          "computeTime": 4.679876298491833,
+          "ioTime": 7.682208,
+          "externalCallTime": 7.682208,
+          "gcTime": 1.722869634734645,
+          "tlsHandshakeTime": 99.50433588381343,
+          "dnsTime": 7.415590256819318,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 54,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 204.15011600283782
+        },
+        "percentiles": {
+          "p50": 11218,
+          "p90": 12858,
+          "p95": 13304,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:47.556Z",
+        "receivedAt": "2025-10-07T13:20:55.776Z",
+        "totalLatencyMs": 8220,
+        "spans": {
+          "queueTime": 850,
+          "computeTime": 5.631656868035505,
+          "ioTime": 5.691209,
+          "externalCallTime": 5.691209,
+          "gcTime": 0.7217037420407642,
+          "tlsHandshakeTime": 87.14103190509302,
+          "dnsTime": 12.128561961386657,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 217,
+          "concurrency": 55,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 217.46010058126322
+        },
+        "percentiles": {
+          "p50": 11213,
+          "p90": 12858,
+          "p95": 13304,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:47.562Z",
+        "receivedAt": "2025-10-07T13:20:55.776Z",
+        "totalLatencyMs": 8214,
+        "spans": {
+          "queueTime": 840,
+          "computeTime": 5.441192476613707,
+          "ioTime": 5.117875,
+          "externalCallTime": 5.117875,
+          "gcTime": 0.5946130358181754,
+          "tlsHandshakeTime": 113.87752540709852,
+          "dnsTime": 12.961264350362667,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 211,
+          "concurrency": 56,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 207.20603179231657
+        },
+        "percentiles": {
+          "p50": 11213,
+          "p90": 12858,
+          "p95": 13304,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:47.567Z",
+        "receivedAt": "2025-10-07T13:20:55.776Z",
+        "totalLatencyMs": 8209,
+        "spans": {
+          "queueTime": 830,
+          "computeTime": 1.2208064162165835,
+          "ioTime": 8.489208,
+          "externalCallTime": 8.489208,
+          "gcTime": 1.3441271491216091,
+          "tlsHandshakeTime": 110.59079867670378,
+          "dnsTime": 3.058543356263126,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 213,
+          "concurrency": 57,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 193.47159637735754
+        },
+        "percentiles": {
+          "p50": 11206,
+          "p90": 12858,
+          "p95": 13304,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:47.576Z",
+        "receivedAt": "2025-10-07T13:20:55.776Z",
+        "totalLatencyMs": 8200,
+        "spans": {
+          "queueTime": 820,
+          "computeTime": 4.082854836461051,
+          "ioTime": 7.419958,
+          "externalCallTime": 7.419958,
+          "gcTime": 0.8455245423255233,
+          "tlsHandshakeTime": 127.52128225213697,
+          "dnsTime": 8.723139221904654,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 206,
+          "concurrency": 58,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 82.4641169723296
+        },
+        "percentiles": {
+          "p50": 11206,
+          "p90": 12858,
+          "p95": 13304,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:47.583Z",
+        "receivedAt": "2025-10-07T13:20:55.776Z",
+        "totalLatencyMs": 8193,
+        "spans": {
+          "queueTime": 810,
+          "computeTime": 2.968740582135852,
+          "ioTime": 8.042458,
+          "externalCallTime": 8.042458,
+          "gcTime": 1.334506739547487,
+          "tlsHandshakeTime": 138.10651115866295,
+          "dnsTime": 5.13198862713633,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 59,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": false,
+          "downstreamLatency": 145.63678821780633
+        },
+        "percentiles": {
+          "p50": 11194,
+          "p90": 12858,
+          "p95": 13304,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:48.056Z",
+        "receivedAt": "2025-10-07T13:20:55.776Z",
+        "totalLatencyMs": 7720,
+        "spans": {
+          "queueTime": 800,
+          "computeTime": 2.3430413397400476,
+          "ioTime": 7.982667,
+          "externalCallTime": 7.982667,
+          "gcTime": 1.398168041238303,
+          "tlsHandshakeTime": 102.2529167946183,
+          "dnsTime": 17.778713299267284,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 219,
+          "concurrency": 60,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 87.1359669382239
+        },
+        "percentiles": {
+          "p50": 11194,
+          "p90": 12858,
+          "p95": 13304,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:48.064Z",
+        "receivedAt": "2025-10-07T13:20:55.776Z",
+        "totalLatencyMs": 7712,
+        "spans": {
+          "queueTime": 790,
+          "computeTime": 5.1234277162254624,
+          "ioTime": 6.573333,
+          "externalCallTime": 6.573333,
+          "gcTime": 1.338267206865654,
+          "tlsHandshakeTime": 101.1697216725031,
+          "dnsTime": 17.3773335652685,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 213,
+          "concurrency": 61,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 143.1185726022083
+        },
+        "percentiles": {
+          "p50": 10723,
+          "p90": 12850,
+          "p95": 13294,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:48.071Z",
+        "receivedAt": "2025-10-07T13:20:55.776Z",
+        "totalLatencyMs": 7705,
+        "spans": {
+          "queueTime": 780,
+          "computeTime": 1.8104641883113206,
+          "ioTime": 7.98025,
+          "externalCallTime": 7.98025,
+          "gcTime": 1.8854727060215222,
+          "tlsHandshakeTime": 109.89871428733039,
+          "dnsTime": 14.31336372356332,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 62,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 59.399085957713815
+        },
+        "percentiles": {
+          "p50": 10723,
+          "p90": 12850,
+          "p95": 13294,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:48.079Z",
+        "receivedAt": "2025-10-07T13:20:55.776Z",
+        "totalLatencyMs": 7697,
+        "spans": {
+          "queueTime": 770,
+          "computeTime": 4.375575529471286,
+          "ioTime": 10.444125,
+          "externalCallTime": 10.444125,
+          "gcTime": 1.6081566627091504,
+          "tlsHandshakeTime": 109.5954514030093,
+          "dnsTime": 4.194835135490678,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 207,
+          "concurrency": 63,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 245.9710415670132
+        },
+        "percentiles": {
+          "p50": 10717,
+          "p90": 12850,
+          "p95": 13294,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:48.090Z",
+        "receivedAt": "2025-10-07T13:20:55.776Z",
+        "totalLatencyMs": 7686,
+        "spans": {
+          "queueTime": 760,
+          "computeTime": 3.201921704666133,
+          "ioTime": 7.485084,
+          "externalCallTime": 7.485084,
+          "gcTime": 0.23833499609213593,
+          "tlsHandshakeTime": 132.9936938060051,
+          "dnsTime": 10.049668050700156,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 203,
+          "concurrency": 64,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 157.11669615365832
+        },
+        "percentiles": {
+          "p50": 10717,
+          "p90": 12850,
+          "p95": 13294,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:48.558Z",
+        "receivedAt": "2025-10-07T13:20:55.776Z",
+        "totalLatencyMs": 7218,
+        "spans": {
+          "queueTime": 750,
+          "computeTime": 3.075087932913575,
+          "ioTime": 201.0095,
+          "externalCallTime": 201.0095,
+          "gcTime": 1.2745099728275733,
+          "tlsHandshakeTime": 57.29391016087162,
+          "dnsTime": 1.3806882513520824,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 65,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 58.20688575749635
+        },
+        "percentiles": {
+          "p50": 10711,
+          "p90": 12850,
+          "p95": 13294,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:48.759Z",
+        "receivedAt": "2025-10-07T13:20:55.776Z",
+        "totalLatencyMs": 7017,
+        "spans": {
+          "queueTime": 740,
+          "computeTime": 5.779685092666986,
+          "ioTime": 127.944416,
+          "externalCallTime": 127.944416,
+          "gcTime": 0.3648210223141257,
+          "tlsHandshakeTime": 100.04507003687291,
+          "dnsTime": 14.589724727564807,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 66,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 235.86666100964214
+        },
+        "percentiles": {
+          "p50": 10711,
+          "p90": 12850,
+          "p95": 13294,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:48.887Z",
+        "receivedAt": "2025-10-07T13:20:55.776Z",
+        "totalLatencyMs": 6889,
+        "spans": {
+          "queueTime": 730,
+          "computeTime": 4.841022779423647,
+          "ioTime": 20.577375,
+          "externalCallTime": 20.577375,
+          "gcTime": 1.8496537648051423,
+          "tlsHandshakeTime": 94.00125385257206,
+          "dnsTime": 13.175001635910842,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 67,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 151.93845241943433
+        },
+        "percentiles": {
+          "p50": 10698,
+          "p90": 12850,
+          "p95": 13294,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:48.908Z",
+        "receivedAt": "2025-10-07T13:20:55.776Z",
+        "totalLatencyMs": 6868,
+        "spans": {
+          "queueTime": 720,
+          "computeTime": 1.679329699866057,
+          "ioTime": 10.80225,
+          "externalCallTime": 10.80225,
+          "gcTime": 1.0324788088793344,
+          "tlsHandshakeTime": 129.95019514300077,
+          "dnsTime": 10.795642758435928,
+          "coldStartTime": 406.01910591677125
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 206,
+          "concurrency": 68,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 64.35611566792296
+        },
+        "percentiles": {
+          "p50": 10698,
+          "p90": 12850,
+          "p95": 13294,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:48.919Z",
+        "receivedAt": "2025-10-07T13:20:55.776Z",
+        "totalLatencyMs": 6857,
+        "spans": {
+          "queueTime": 710,
+          "computeTime": 5.094797630262433,
+          "ioTime": 7.468167,
+          "externalCallTime": 7.468167,
+          "gcTime": 1.3025711235791535,
+          "tlsHandshakeTime": 78.82129445700281,
+          "dnsTime": 15.317213940359355,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 69,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": false,
+          "downstreamLatency": 194.68311574524236
+        },
+        "percentiles": {
+          "p50": 10693,
+          "p90": 12850,
+          "p95": 13294,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:49.060Z",
+        "receivedAt": "2025-10-07T13:20:55.777Z",
+        "totalLatencyMs": 6717,
+        "spans": {
+          "queueTime": 700,
+          "computeTime": 5.464239007676717,
+          "ioTime": 5.882583,
+          "externalCallTime": 5.882583,
+          "gcTime": 1.0149036240406901,
+          "tlsHandshakeTime": 73.7747970583032,
+          "dnsTime": 0.8454387626026039,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 70,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 189.19515534824743
+        },
+        "percentiles": {
+          "p50": 10693,
+          "p90": 12850,
+          "p95": 13294,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:49.065Z",
+        "receivedAt": "2025-10-07T13:20:55.777Z",
+        "totalLatencyMs": 6712,
+        "spans": {
+          "queueTime": 690,
+          "computeTime": 1.5210652333200294,
+          "ioTime": 5.037541,
+          "externalCallTime": 5.037541,
+          "gcTime": 0.7537086609155987,
+          "tlsHandshakeTime": 125.07889178997107,
+          "dnsTime": 15.681534790897672,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 71,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 79.62143410906015
+        },
+        "percentiles": {
+          "p50": 10222,
+          "p90": 12843,
+          "p95": 13294,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:49.071Z",
+        "receivedAt": "2025-10-07T13:20:55.777Z",
+        "totalLatencyMs": 6706,
+        "spans": {
+          "queueTime": 680,
+          "computeTime": 3.8616654365396865,
+          "ioTime": 5.635375,
+          "externalCallTime": 5.635375,
+          "gcTime": 1.8454339524712768,
+          "tlsHandshakeTime": 119.693025403164,
+          "dnsTime": 8.298864852576457,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 72,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 193.3388951788034
+        },
+        "percentiles": {
+          "p50": 10222,
+          "p90": 12843,
+          "p95": 13294,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:49.076Z",
+        "receivedAt": "2025-10-07T13:20:55.777Z",
+        "totalLatencyMs": 6701,
+        "spans": {
+          "queueTime": 670,
+          "computeTime": 4.6050032265998375,
+          "ioTime": 8.499416,
+          "externalCallTime": 8.499416,
+          "gcTime": 0.8536215177931727,
+          "tlsHandshakeTime": 64.39463385811197,
+          "dnsTime": 11.191198291695601,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 206,
+          "concurrency": 73,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 121.62989571703098
+        },
+        "percentiles": {
+          "p50": 10216,
+          "p90": 12843,
+          "p95": 13294,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:49.085Z",
+        "receivedAt": "2025-10-07T13:20:55.777Z",
+        "totalLatencyMs": 6692,
+        "spans": {
+          "queueTime": 660,
+          "computeTime": 2.5005832569432345,
+          "ioTime": 11.711792,
+          "externalCallTime": 11.711792,
+          "gcTime": 1.4119174431628116,
+          "tlsHandshakeTime": 117.05079821193596,
+          "dnsTime": 14.280616434604415,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 74,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 108.09558076672441
+        },
+        "percentiles": {
+          "p50": 10216,
+          "p90": 12843,
+          "p95": 13294,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:49.561Z",
+        "receivedAt": "2025-10-07T13:20:55.777Z",
+        "totalLatencyMs": 6216,
+        "spans": {
+          "queueTime": 650,
+          "computeTime": 4.765587401132889,
+          "ioTime": 6.371417,
+          "externalCallTime": 6.371417,
+          "gcTime": 0.5067714886770536,
+          "tlsHandshakeTime": 60.730922180010396,
+          "dnsTime": 13.520750912924854,
+          "coldStartTime": 127.23069848375457
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 216,
+          "concurrency": 75,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 197.3911330279217
+        },
+        "percentiles": {
+          "p50": 10212,
+          "p90": 12843,
+          "p95": 13294,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:49.567Z",
+        "receivedAt": "2025-10-07T13:20:55.777Z",
+        "totalLatencyMs": 6210,
+        "spans": {
+          "queueTime": 640,
+          "computeTime": 3.91686029420519,
+          "ioTime": 6.633083,
+          "externalCallTime": 6.633083,
+          "gcTime": 1.319403692843887,
+          "tlsHandshakeTime": 143.57040326180947,
+          "dnsTime": 8.455317423875663,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 76,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 248.23852372488906
+        },
+        "percentiles": {
+          "p50": 10212,
+          "p90": 12843,
+          "p95": 13294,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:49.574Z",
+        "receivedAt": "2025-10-07T13:20:55.777Z",
+        "totalLatencyMs": 6203,
+        "spans": {
+          "queueTime": 630,
+          "computeTime": 1.3214795145749094,
+          "ioTime": 6.7565,
+          "externalCallTime": 6.7565,
+          "gcTime": 1.4334234754281345,
+          "tlsHandshakeTime": 132.89368151782404,
+          "dnsTime": 5.307047670987051,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 77,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 114.05736563876596
+        },
+        "percentiles": {
+          "p50": 10205,
+          "p90": 12843,
+          "p95": 13294,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:49.580Z",
+        "receivedAt": "2025-10-07T13:20:55.777Z",
+        "totalLatencyMs": 6197,
+        "spans": {
+          "queueTime": 620,
+          "computeTime": 5.726755689898642,
+          "ioTime": 7.764958,
+          "externalCallTime": 7.764958,
+          "gcTime": 1.176669094811956,
+          "tlsHandshakeTime": 68.88897056027878,
+          "dnsTime": 15.767868599593996,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 206,
+          "concurrency": 78,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 95.39736886555934
+        },
+        "percentiles": {
+          "p50": 10205,
+          "p90": 12843,
+          "p95": 13294,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:49.588Z",
+        "receivedAt": "2025-10-07T13:20:55.778Z",
+        "totalLatencyMs": 6190,
+        "spans": {
+          "queueTime": 610,
+          "computeTime": 5.850738496393456,
+          "ioTime": 6.892916,
+          "externalCallTime": 6.892916,
+          "gcTime": 1.9574386448790344,
+          "tlsHandshakeTime": 110.90930065515663,
+          "dnsTime": 15.144964761417476,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 79,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": false,
+          "downstreamLatency": 72.06384455344681
+        },
+        "percentiles": {
+          "p50": 10199,
+          "p90": 12843,
+          "p95": 13294,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:50.061Z",
+        "receivedAt": "2025-10-07T13:20:55.778Z",
+        "totalLatencyMs": 5717,
+        "spans": {
+          "queueTime": 600,
+          "computeTime": 3.9207588956086994,
+          "ioTime": 6.472542,
+          "externalCallTime": 6.472542,
+          "gcTime": 0.27817248925125604,
+          "tlsHandshakeTime": 142.98553342251617,
+          "dnsTime": 18.181255209852978,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 80,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 206.51794965847085
+        },
+        "percentiles": {
+          "p50": 10199,
+          "p90": 12843,
+          "p95": 13294,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:50.067Z",
+        "receivedAt": "2025-10-07T13:20:55.778Z",
+        "totalLatencyMs": 5711,
+        "spans": {
+          "queueTime": 590,
+          "computeTime": 2.4815362216175543,
+          "ioTime": 7.138792,
+          "externalCallTime": 7.138792,
+          "gcTime": 1.9874459521397765,
+          "tlsHandshakeTime": 58.50429113495075,
+          "dnsTime": 16.381793562844663,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 81,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 207.0049001098809
+        },
+        "percentiles": {
+          "p50": 9722,
+          "p90": 12836,
+          "p95": 13287,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:50.075Z",
+        "receivedAt": "2025-10-07T13:20:55.778Z",
+        "totalLatencyMs": 5703,
+        "spans": {
+          "queueTime": 580,
+          "computeTime": 2.907349866493191,
+          "ioTime": 7.208916,
+          "externalCallTime": 7.208916,
+          "gcTime": 1.5532624991215194,
+          "tlsHandshakeTime": 98.57795656849376,
+          "dnsTime": 7.1529433225754335,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 213,
+          "concurrency": 82,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 77.19110516275016
+        },
+        "percentiles": {
+          "p50": 9722,
+          "p90": 12836,
+          "p95": 13287,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:50.082Z",
+        "receivedAt": "2025-10-07T13:20:55.778Z",
+        "totalLatencyMs": 5696,
+        "spans": {
+          "queueTime": 570,
+          "computeTime": 4.460431131062316,
+          "ioTime": 15.97425,
+          "externalCallTime": 15.97425,
+          "gcTime": 1.986801149991313,
+          "tlsHandshakeTime": 136.2554373373086,
+          "dnsTime": 3.9560867868025174,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 207,
+          "concurrency": 83,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 203.67345778862793
+        },
+        "percentiles": {
+          "p50": 9716,
+          "p90": 12836,
+          "p95": 13287,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:50.098Z",
+        "receivedAt": "2025-10-07T13:20:55.778Z",
+        "totalLatencyMs": 5680,
+        "spans": {
+          "queueTime": 560,
+          "computeTime": 2.5222781467786426,
+          "ioTime": 14.111125,
+          "externalCallTime": 14.111125,
+          "gcTime": 0.8003423494321606,
+          "tlsHandshakeTime": 108.43371199094469,
+          "dnsTime": 3.5297819858752533,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 203,
+          "concurrency": 84,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 79.76125722739695
+        },
+        "percentiles": {
+          "p50": 9716,
+          "p90": 12836,
+          "p95": 13287,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:50.561Z",
+        "receivedAt": "2025-10-07T13:20:55.778Z",
+        "totalLatencyMs": 5217,
+        "spans": {
+          "queueTime": 550,
+          "computeTime": 3.997725126700752,
+          "ioTime": 6.74175,
+          "externalCallTime": 6.74175,
+          "gcTime": 0.11873628247502666,
+          "tlsHandshakeTime": 92.92758687982206,
+          "dnsTime": 0.4656491347899383,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 85,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 113.06133667934009
+        },
+        "percentiles": {
+          "p50": 9712,
+          "p90": 12836,
+          "p95": 13287,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:50.568Z",
+        "receivedAt": "2025-10-07T13:20:55.778Z",
+        "totalLatencyMs": 5210,
+        "spans": {
+          "queueTime": 540,
+          "computeTime": 5.762484039448502,
+          "ioTime": 6.364167,
+          "externalCallTime": 6.364167,
+          "gcTime": 1.2541789434122923,
+          "tlsHandshakeTime": 124.52639863071666,
+          "dnsTime": 18.701794009083347,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 213,
+          "concurrency": 86,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 66.72394193538133
+        },
+        "percentiles": {
+          "p50": 9712,
+          "p90": 12836,
+          "p95": 13287,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:50.574Z",
+        "receivedAt": "2025-10-07T13:20:55.778Z",
+        "totalLatencyMs": 5204,
+        "spans": {
+          "queueTime": 530,
+          "computeTime": 3.3171735280930204,
+          "ioTime": 6.019541,
+          "externalCallTime": 6.019541,
+          "gcTime": 1.813591095615652,
+          "tlsHandshakeTime": 69.34865167015347,
+          "dnsTime": 3.159468042250766,
+          "coldStartTime": 761.443982977201
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 213,
+          "concurrency": 87,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 126.75609106498004
+        },
+        "percentiles": {
+          "p50": 9706,
+          "p90": 12836,
+          "p95": 13287,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:50.580Z",
+        "receivedAt": "2025-10-07T13:20:55.778Z",
+        "totalLatencyMs": 5198,
+        "spans": {
+          "queueTime": 520,
+          "computeTime": 5.394197032589572,
+          "ioTime": 5.159542,
+          "externalCallTime": 5.159542,
+          "gcTime": 1.979096005478918,
+          "tlsHandshakeTime": 111.71679377892723,
+          "dnsTime": 0.7624659821138335,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 206,
+          "concurrency": 88,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 81.78405828551858
+        },
+        "percentiles": {
+          "p50": 9706,
+          "p90": 12836,
+          "p95": 13287,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:50.586Z",
+        "receivedAt": "2025-10-07T13:20:55.778Z",
+        "totalLatencyMs": 5192,
+        "spans": {
+          "queueTime": 510,
+          "computeTime": 2.629692883383952,
+          "ioTime": 7.8,
+          "externalCallTime": 7.8,
+          "gcTime": 0.8024156256690271,
+          "tlsHandshakeTime": 132.6640097692347,
+          "dnsTime": 17.23009207871359,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 89,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 161.1424018116208
+        },
+        "percentiles": {
+          "p50": 9700,
+          "p90": 12836,
+          "p95": 13287,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:51.061Z",
+        "receivedAt": "2025-10-07T13:20:55.779Z",
+        "totalLatencyMs": 4718,
+        "spans": {
+          "queueTime": 500,
+          "computeTime": 3.4789913374954042,
+          "ioTime": 9.453334,
+          "externalCallTime": 9.453334,
+          "gcTime": 1.135868277289997,
+          "tlsHandshakeTime": 74.62500935478045,
+          "dnsTime": 13.039774974129955,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 90,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 221.40059304595096
+        },
+        "percentiles": {
+          "p50": 9700,
+          "p90": 12836,
+          "p95": 13287,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:51.070Z",
+        "receivedAt": "2025-10-07T13:20:55.779Z",
+        "totalLatencyMs": 4709,
+        "spans": {
+          "queueTime": 490,
+          "computeTime": 1.6142168372516732,
+          "ioTime": 13.700917,
+          "externalCallTime": 13.700917,
+          "gcTime": 0.41641615889186445,
+          "tlsHandshakeTime": 146.33268556437622,
+          "dnsTime": 7.814439906203998,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 91,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 123.18566977106028
+        },
+        "percentiles": {
+          "p50": 9221,
+          "p90": 12828,
+          "p95": 13287,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:51.084Z",
+        "receivedAt": "2025-10-07T13:20:55.779Z",
+        "totalLatencyMs": 4695,
+        "spans": {
+          "queueTime": 480,
+          "computeTime": 5.051956427437875,
+          "ioTime": 15.332708,
+          "externalCallTime": 15.332708,
+          "gcTime": 0.9367997098648244,
+          "tlsHandshakeTime": 103.17907441700018,
+          "dnsTime": 0.4564284730300816,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 92,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 142.50328524851074
+        },
+        "percentiles": {
+          "p50": 9221,
+          "p90": 12828,
+          "p95": 13287,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:51.100Z",
+        "receivedAt": "2025-10-07T13:20:56.798Z",
+        "totalLatencyMs": 5698,
+        "spans": {
+          "queueTime": 570,
+          "computeTime": 3.0638847658465744,
+          "ioTime": 9.703541,
+          "externalCallTime": 9.703541,
+          "gcTime": 1.082870712072019,
+          "tlsHandshakeTime": 87.02644593657459,
+          "dnsTime": 2.5042032112663914,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 206,
+          "concurrency": 93,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 161.08637724518456
+        },
+        "percentiles": {
+          "p50": 9213,
+          "p90": 12828,
+          "p95": 13287,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:51.109Z",
+        "receivedAt": "2025-10-07T13:20:56.799Z",
+        "totalLatencyMs": 5690,
+        "spans": {
+          "queueTime": 560,
+          "computeTime": 1.395450379793827,
+          "ioTime": 17.993167,
+          "externalCallTime": 17.993167,
+          "gcTime": 1.226824379974739,
+          "tlsHandshakeTime": 90.78353949327763,
+          "dnsTime": 2.607810088022302,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 94,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 173.77368885698831
+        },
+        "percentiles": {
+          "p50": 9213,
+          "p90": 12828,
+          "p95": 13287,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:51.562Z",
+        "receivedAt": "2025-10-07T13:20:56.799Z",
+        "totalLatencyMs": 5237,
+        "spans": {
+          "queueTime": 550,
+          "computeTime": 3.675619118956295,
+          "ioTime": 18.550791,
+          "externalCallTime": 18.550791,
+          "gcTime": 0.8523590635239318,
+          "tlsHandshakeTime": 113.12573856387667,
+          "dnsTime": 18.400650387890444,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 95,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 93.33241127514897
+        },
+        "percentiles": {
+          "p50": 9207,
+          "p90": 12828,
+          "p95": 13287,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:51.581Z",
+        "receivedAt": "2025-10-07T13:20:56.799Z",
+        "totalLatencyMs": 5218,
+        "spans": {
+          "queueTime": 540,
+          "computeTime": 4.857727618009411,
+          "ioTime": 7.046167,
+          "externalCallTime": 7.046167,
+          "gcTime": 1.3803818804773416,
+          "tlsHandshakeTime": 101.32959991910474,
+          "dnsTime": 7.148166677507493,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 213,
+          "concurrency": 96,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 236.51909991545998
+        },
+        "percentiles": {
+          "p50": 9207,
+          "p90": 12828,
+          "p95": 13287,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:51.588Z",
+        "receivedAt": "2025-10-07T13:20:56.799Z",
+        "totalLatencyMs": 5211,
+        "spans": {
+          "queueTime": 530,
+          "computeTime": 3.6238811024730992,
+          "ioTime": 5.81,
+          "externalCallTime": 5.81,
+          "gcTime": 0.9789615492032993,
+          "tlsHandshakeTime": 113.89998985787594,
+          "dnsTime": 17.861068791413967,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 211,
+          "concurrency": 97,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 120.42458107290952
+        },
+        "percentiles": {
+          "p50": 9201,
+          "p90": 12828,
+          "p95": 13287,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:51.594Z",
+        "receivedAt": "2025-10-07T13:20:56.799Z",
+        "totalLatencyMs": 5205,
+        "spans": {
+          "queueTime": 520,
+          "computeTime": 4.201249795403641,
+          "ioTime": 6.373625,
+          "externalCallTime": 6.373625,
+          "gcTime": 1.620955382996172,
+          "tlsHandshakeTime": 126.81064391321011,
+          "dnsTime": 0.8445787531094862,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 207,
+          "concurrency": 98,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 92.8773629290022
+        },
+        "percentiles": {
+          "p50": 9201,
+          "p90": 12828,
+          "p95": 13287,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:51.600Z",
+        "receivedAt": "2025-10-07T13:20:56.799Z",
+        "totalLatencyMs": 5199,
+        "spans": {
+          "queueTime": 510,
+          "computeTime": 3.7178532377316844,
+          "ioTime": 5.681542,
+          "externalCallTime": 5.681542,
+          "gcTime": 1.344045656635393,
+          "tlsHandshakeTime": 62.273288444555774,
+          "dnsTime": 3.762024671519062,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 200,
+          "concurrency": 99,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 139.48873794327756
+        },
+        "percentiles": {
+          "p50": 9197,
+          "p90": 12828,
+          "p95": 13287,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:52.064Z",
+        "receivedAt": "2025-10-07T13:20:56.800Z",
+        "totalLatencyMs": 4736,
+        "spans": {
+          "queueTime": 500,
+          "computeTime": 3.1326514208471625,
+          "ioTime": 5.939125,
+          "externalCallTime": 5.939125,
+          "gcTime": 1.3176041316169527,
+          "tlsHandshakeTime": 55.1504072185035,
+          "dnsTime": 14.675991817567606,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 100,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 113.546352755708
+        },
+        "percentiles": {
+          "p50": 9197,
+          "p90": 12828,
+          "p95": 13287,
+          "p99": 13358
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:52.070Z",
+        "receivedAt": "2025-10-07T13:20:56.800Z",
+        "totalLatencyMs": 4730,
+        "spans": {
+          "queueTime": 490,
+          "computeTime": 5.390697918858849,
+          "ioTime": 5.240792,
+          "externalCallTime": 5.240792,
+          "gcTime": 0.6772320610980707,
+          "tlsHandshakeTime": 147.5259923378511,
+          "dnsTime": 9.200785568570886,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 210,
+          "concurrency": 101,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 80.38173795168255
+        },
+        "percentiles": {
+          "p50": 8719,
+          "p90": 12724,
+          "p95": 12858,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:52.075Z",
+        "receivedAt": "2025-10-07T13:20:56.800Z",
+        "totalLatencyMs": 4725,
+        "spans": {
+          "queueTime": 480,
+          "computeTime": 1.2419763593356616,
+          "ioTime": 6.326125,
+          "externalCallTime": 6.326125,
+          "gcTime": 1.6169052858341195,
+          "tlsHandshakeTime": 103.90336330575123,
+          "dnsTime": 18.276774128669018,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 213,
+          "concurrency": 102,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 84.54141138942641
+        },
+        "percentiles": {
+          "p50": 8719,
+          "p90": 12724,
+          "p95": 12858,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:52.082Z",
+        "receivedAt": "2025-10-07T13:20:56.800Z",
+        "totalLatencyMs": 4718,
+        "spans": {
+          "queueTime": 470,
+          "computeTime": 2.8182550502145087,
+          "ioTime": 7.29825,
+          "externalCallTime": 7.29825,
+          "gcTime": 0.8186190895604275,
+          "tlsHandshakeTime": 115.046046997951,
+          "dnsTime": 16.262424275219068,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 206,
+          "concurrency": 103,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 238.18566256074033
+        },
+        "percentiles": {
+          "p50": 8673,
+          "p90": 12724,
+          "p95": 12858,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:52.089Z",
+        "receivedAt": "2025-10-07T13:20:56.801Z",
+        "totalLatencyMs": 4712,
+        "spans": {
+          "queueTime": 460,
+          "computeTime": 3.8647235202674173,
+          "ioTime": 7.906833,
+          "externalCallTime": 7.906833,
+          "gcTime": 0.8676952980404216,
+          "tlsHandshakeTime": 67.05513593367803,
+          "dnsTime": 14.779066979746588,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 104,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 175.80322492385116
+        },
+        "percentiles": {
+          "p50": 8673,
+          "p90": 12724,
+          "p95": 12858,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:52.565Z",
+        "receivedAt": "2025-10-07T13:20:56.801Z",
+        "totalLatencyMs": 4236,
+        "spans": {
+          "queueTime": 450,
+          "computeTime": 5.140538446460335,
+          "ioTime": 5.416584,
+          "externalCallTime": 5.416584,
+          "gcTime": 1.6802065908035995,
+          "tlsHandshakeTime": 116.50628953971678,
+          "dnsTime": 8.795495161526672,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 105,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 84.37333151585702
+        },
+        "percentiles": {
+          "p50": 8661,
+          "p90": 12724,
+          "p95": 12858,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:52.570Z",
+        "receivedAt": "2025-10-07T13:20:56.801Z",
+        "totalLatencyMs": 4231,
+        "spans": {
+          "queueTime": 440,
+          "computeTime": 4.789585158862496,
+          "ioTime": 5.295625,
+          "externalCallTime": 5.295625,
+          "gcTime": 1.7962773755097996,
+          "tlsHandshakeTime": 118.25552565485779,
+          "dnsTime": 3.752428249583102,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 106,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": false,
+          "downstreamLatency": 144.54415112343878
+        },
+        "percentiles": {
+          "p50": 8661,
+          "p90": 12724,
+          "p95": 12858,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:52.576Z",
+        "receivedAt": "2025-10-07T13:20:56.801Z",
+        "totalLatencyMs": 4225,
+        "spans": {
+          "queueTime": 430,
+          "computeTime": 4.693665151417559,
+          "ioTime": 7.224625,
+          "externalCallTime": 7.224625,
+          "gcTime": 0.9288660402572813,
+          "tlsHandshakeTime": 60.987795055403,
+          "dnsTime": 13.219592011888022,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 107,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 111.6596761214717
+        },
+        "percentiles": {
+          "p50": 8652,
+          "p90": 12724,
+          "p95": 12858,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:52.583Z",
+        "receivedAt": "2025-10-07T13:20:56.801Z",
+        "totalLatencyMs": 4218,
+        "spans": {
+          "queueTime": 420,
+          "computeTime": 2.1645601938884886,
+          "ioTime": 5.587791,
+          "externalCallTime": 5.587791,
+          "gcTime": 0.5892656590255814,
+          "tlsHandshakeTime": 79.7397135686338,
+          "dnsTime": 4.725368574260731,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 208,
+          "concurrency": 108,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 180.27965507402683
+        },
+        "percentiles": {
+          "p50": 8652,
+          "p90": 12724,
+          "p95": 12858,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:52.589Z",
+        "receivedAt": "2025-10-07T13:20:56.802Z",
+        "totalLatencyMs": 4213,
+        "spans": {
+          "queueTime": 410,
+          "computeTime": 5.276699732908746,
+          "ioTime": 8.029208,
+          "externalCallTime": 8.029208,
+          "gcTime": 1.3994545418556874,
+          "tlsHandshakeTime": 108.69855790284873,
+          "dnsTime": 11.452502533298015,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 109,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 132.43741277221017
+        },
+        "percentiles": {
+          "p50": 8645,
+          "p90": 12724,
+          "p95": 12858,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:53.066Z",
+        "receivedAt": "2025-10-07T13:20:56.803Z",
+        "totalLatencyMs": 3737,
+        "spans": {
+          "queueTime": 400,
+          "computeTime": 2.0350096889849656,
+          "ioTime": 9.59475,
+          "externalCallTime": 9.59475,
+          "gcTime": 1.062760601618601,
+          "tlsHandshakeTime": 66.45794694976415,
+          "dnsTime": 17.640474474954537,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 110,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 174.70723060853442
+        },
+        "percentiles": {
+          "p50": 8645,
+          "p90": 12724,
+          "p95": 12858,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:53.076Z",
+        "receivedAt": "2025-10-07T13:20:56.803Z",
+        "totalLatencyMs": 3727,
+        "spans": {
+          "queueTime": 390,
+          "computeTime": 3.3592606314924147,
+          "ioTime": 6.832959,
+          "externalCallTime": 6.832959,
+          "gcTime": 1.173981681666037,
+          "tlsHandshakeTime": 79.55211766511971,
+          "dnsTime": 14.801081126426908,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 211,
+          "concurrency": 111,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 122.94945281968963
+        },
+        "percentiles": {
+          "p50": 8220,
+          "p90": 12717,
+          "p95": 12858,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:53.083Z",
+        "receivedAt": "2025-10-07T13:20:56.803Z",
+        "totalLatencyMs": 3720,
+        "spans": {
+          "queueTime": 380,
+          "computeTime": 4.109234665711379,
+          "ioTime": 6.5685,
+          "externalCallTime": 6.5685,
+          "gcTime": 0.5464021000822243,
+          "tlsHandshakeTime": 117.5570438964068,
+          "dnsTime": 15.081265345527415,
+          "coldStartTime": 372.41475801097334
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 112,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 233.49787122417217
+        },
+        "percentiles": {
+          "p50": 8220,
+          "p90": 12717,
+          "p95": 12858,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:53.089Z",
+        "receivedAt": "2025-10-07T13:20:56.803Z",
+        "totalLatencyMs": 3714,
+        "spans": {
+          "queueTime": 370,
+          "computeTime": 4.0483476201630335,
+          "ioTime": 8.315167,
+          "externalCallTime": 8.315167,
+          "gcTime": 1.1647624157719862,
+          "tlsHandshakeTime": 115.20957203791752,
+          "dnsTime": 13.184949413306617,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 206,
+          "concurrency": 113,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 134.4506629118715
+        },
+        "percentiles": {
+          "p50": 8214,
+          "p90": 12717,
+          "p95": 12858,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:53.097Z",
+        "receivedAt": "2025-10-07T13:20:56.803Z",
+        "totalLatencyMs": 3706,
+        "spans": {
+          "queueTime": 360,
+          "computeTime": 5.349599920303584,
+          "ioTime": 8.345333,
+          "externalCallTime": 8.345333,
+          "gcTime": 1.9819396210413558,
+          "tlsHandshakeTime": 138.40930186425607,
+          "dnsTime": 19.71944067203353,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 114,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 98.7984343073748
+        },
+        "percentiles": {
+          "p50": 8214,
+          "p90": 12717,
+          "p95": 12858,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:53.567Z",
+        "receivedAt": "2025-10-07T13:20:56.804Z",
+        "totalLatencyMs": 3237,
+        "spans": {
+          "queueTime": 350,
+          "computeTime": 1.8873901777772242,
+          "ioTime": 5.898584,
+          "externalCallTime": 5.898584,
+          "gcTime": 0.3704681712974711,
+          "tlsHandshakeTime": 72.54819682686062,
+          "dnsTime": 1.7602324516807544,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 115,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 162.81408778396974
+        },
+        "percentiles": {
+          "p50": 8209,
+          "p90": 12717,
+          "p95": 12858,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:53.573Z",
+        "receivedAt": "2025-10-07T13:20:56.804Z",
+        "totalLatencyMs": 3231,
+        "spans": {
+          "queueTime": 340,
+          "computeTime": 3.3550284183846024,
+          "ioTime": 4.85475,
+          "externalCallTime": 4.85475,
+          "gcTime": 0.8372277409788969,
+          "tlsHandshakeTime": 82.10566545974929,
+          "dnsTime": 0.24859959448852553,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 116,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 194.1905734615363
+        },
+        "percentiles": {
+          "p50": 8209,
+          "p90": 12717,
+          "p95": 12858,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:53.578Z",
+        "receivedAt": "2025-10-07T13:20:56.804Z",
+        "totalLatencyMs": 3226,
+        "spans": {
+          "queueTime": 330,
+          "computeTime": 5.619388287435687,
+          "ioTime": 5.725791,
+          "externalCallTime": 5.725791,
+          "gcTime": 1.432036628847413,
+          "tlsHandshakeTime": 139.007023614577,
+          "dnsTime": 13.548042718223163,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 213,
+          "concurrency": 117,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 134.26310936413776
+        },
+        "percentiles": {
+          "p50": 8200,
+          "p90": 12717,
+          "p95": 12858,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:53.584Z",
+        "receivedAt": "2025-10-07T13:20:56.804Z",
+        "totalLatencyMs": 3220,
+        "spans": {
+          "queueTime": 320,
+          "computeTime": 2.0099834198007684,
+          "ioTime": 5.176167,
+          "externalCallTime": 5.176167,
+          "gcTime": 0.5582215146630576,
+          "tlsHandshakeTime": 60.22052730243623,
+          "dnsTime": 16.07540503704954,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 206,
+          "concurrency": 118,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 58.4725899304737
+        },
+        "percentiles": {
+          "p50": 8200,
+          "p90": 12717,
+          "p95": 12858,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:53.589Z",
+        "receivedAt": "2025-10-07T13:20:56.804Z",
+        "totalLatencyMs": 3215,
+        "spans": {
+          "queueTime": 310,
+          "computeTime": 4.733258865063901,
+          "ioTime": 5.85925,
+          "externalCallTime": 5.85925,
+          "gcTime": 1.8899203432569984,
+          "tlsHandshakeTime": 143.0008816514298,
+          "dnsTime": 1.8237233968858302,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 119,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": false,
+          "downstreamLatency": 152.56198960540803
+        },
+        "percentiles": {
+          "p50": 8193,
+          "p90": 12717,
+          "p95": 12858,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:54.068Z",
+        "receivedAt": "2025-10-07T13:20:56.804Z",
+        "totalLatencyMs": 2736,
+        "spans": {
+          "queueTime": 300,
+          "computeTime": 1.9207857650299345,
+          "ioTime": 5.620875,
+          "externalCallTime": 5.620875,
+          "gcTime": 1.4852875110927584,
+          "tlsHandshakeTime": 119.16321309762307,
+          "dnsTime": 4.873448926606914,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 120,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 106.54801067334216
+        },
+        "percentiles": {
+          "p50": 8193,
+          "p90": 12717,
+          "p95": 12858,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:54.074Z",
+        "receivedAt": "2025-10-07T13:20:56.804Z",
+        "totalLatencyMs": 2730,
+        "spans": {
+          "queueTime": 290,
+          "computeTime": 5.213288986659762,
+          "ioTime": 5.94425,
+          "externalCallTime": 5.94425,
+          "gcTime": 0.6084449771967662,
+          "tlsHandshakeTime": 147.7288216332099,
+          "dnsTime": 17.965911200476565,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 121,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 78.18664385972865
+        },
+        "percentiles": {
+          "p50": 7720,
+          "p90": 12710,
+          "p95": 12850,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:54.080Z",
+        "receivedAt": "2025-10-07T13:20:56.804Z",
+        "totalLatencyMs": 2724,
+        "spans": {
+          "queueTime": 280,
+          "computeTime": 4.364857433278177,
+          "ioTime": 11.324125,
+          "externalCallTime": 11.324125,
+          "gcTime": 0.8785231295128235,
+          "tlsHandshakeTime": 72.25485771743175,
+          "dnsTime": 6.667390147779861,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 122,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 245.67529193614425
+        },
+        "percentiles": {
+          "p50": 7720,
+          "p90": 12710,
+          "p95": 12850,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:54.091Z",
+        "receivedAt": "2025-10-07T13:20:56.804Z",
+        "totalLatencyMs": 2713,
+        "spans": {
+          "queueTime": 270,
+          "computeTime": 3.1002443396585004,
+          "ioTime": 6.312291,
+          "externalCallTime": 6.312291,
+          "gcTime": 1.5010659618597701,
+          "tlsHandshakeTime": 128.572205847455,
+          "dnsTime": 18.44350789747553,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 206,
+          "concurrency": 123,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 162.3254756832841
+        },
+        "percentiles": {
+          "p50": 7712,
+          "p90": 12710,
+          "p95": 12850,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:54.098Z",
+        "receivedAt": "2025-10-07T13:20:56.804Z",
+        "totalLatencyMs": 2706,
+        "spans": {
+          "queueTime": 260,
+          "computeTime": 2.4011904879188153,
+          "ioTime": 6.405292,
+          "externalCallTime": 6.405292,
+          "gcTime": 1.4003571415094656,
+          "tlsHandshakeTime": 96.9707600723954,
+          "dnsTime": 18.723478658697992,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 203,
+          "concurrency": 124,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 141.31821784963904
+        },
+        "percentiles": {
+          "p50": 7712,
+          "p90": 12710,
+          "p95": 12850,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:54.569Z",
+        "receivedAt": "2025-10-07T13:20:56.805Z",
+        "totalLatencyMs": 2236,
+        "spans": {
+          "queueTime": 250,
+          "computeTime": 2.101884552442236,
+          "ioTime": 6.788167,
+          "externalCallTime": 6.788167,
+          "gcTime": 0.4645997203827732,
+          "tlsHandshakeTime": 64.87120220868619,
+          "dnsTime": 19.118857177139745,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 125,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 223.25540055818834
+        },
+        "percentiles": {
+          "p50": 7705,
+          "p90": 12710,
+          "p95": 12850,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:54.576Z",
+        "receivedAt": "2025-10-07T13:20:56.805Z",
+        "totalLatencyMs": 2229,
+        "spans": {
+          "queueTime": 240,
+          "computeTime": 2.97661061912778,
+          "ioTime": 6.742375,
+          "externalCallTime": 6.742375,
+          "gcTime": 1.682516676619357,
+          "tlsHandshakeTime": 87.43167863895056,
+          "dnsTime": 12.505007168497468,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 214,
+          "concurrency": 126,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 174.6407492905234
+        },
+        "percentiles": {
+          "p50": 7705,
+          "p90": 12710,
+          "p95": 12850,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:54.582Z",
+        "receivedAt": "2025-10-07T13:20:56.805Z",
+        "totalLatencyMs": 2223,
+        "spans": {
+          "queueTime": 230,
+          "computeTime": 1.2623521036861531,
+          "ioTime": 6.041625,
+          "externalCallTime": 6.041625,
+          "gcTime": 0.34247183438018647,
+          "tlsHandshakeTime": 59.67022092164027,
+          "dnsTime": 2.9937889172813215,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 127,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 104.48652199642959
+        },
+        "percentiles": {
+          "p50": 7697,
+          "p90": 12710,
+          "p95": 12850,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:54.588Z",
+        "receivedAt": "2025-10-07T13:20:56.805Z",
+        "totalLatencyMs": 2217,
+        "spans": {
+          "queueTime": 220,
+          "computeTime": 2.128536734447081,
+          "ioTime": 5.930666,
+          "externalCallTime": 5.930666,
+          "gcTime": 1.8447774200863578,
+          "tlsHandshakeTime": 93.73176755096813,
+          "dnsTime": 9.85671041531781,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 204,
+          "concurrency": 128,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 173.88139862587775
+        },
+        "percentiles": {
+          "p50": 7697,
+          "p90": 12710,
+          "p95": 12850,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:54.594Z",
+        "receivedAt": "2025-10-07T13:20:56.805Z",
+        "totalLatencyMs": 2211,
+        "spans": {
+          "queueTime": 210,
+          "computeTime": 2.3630127646630785,
+          "ioTime": 5.189084,
+          "externalCallTime": 5.189084,
+          "gcTime": 1.976165393290915,
+          "tlsHandshakeTime": 139.3866326852784,
+          "dnsTime": 17.526643205849478,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 201,
+          "concurrency": 129,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 72.74832009611431
+        },
+        "percentiles": {
+          "p50": 7686,
+          "p90": 12710,
+          "p95": 12850,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:55.070Z",
+        "receivedAt": "2025-10-07T13:20:56.805Z",
+        "totalLatencyMs": 1735,
+        "spans": {
+          "queueTime": 200,
+          "computeTime": 3.730539654254721,
+          "ioTime": 5.150125,
+          "externalCallTime": 5.150125,
+          "gcTime": 0.029615457706209103,
+          "tlsHandshakeTime": 85.30016178061473,
+          "dnsTime": 3.3630381766141904,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 219,
+          "concurrency": 130,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 55.215983962269675
+        },
+        "percentiles": {
+          "p50": 7686,
+          "p90": 12710,
+          "p95": 12850,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:55.076Z",
+        "receivedAt": "2025-10-07T13:20:56.806Z",
+        "totalLatencyMs": 1730,
+        "spans": {
+          "queueTime": 190,
+          "computeTime": 2.593797892108503,
+          "ioTime": 4.784583,
+          "externalCallTime": 4.784583,
+          "gcTime": 0.2588398002287038,
+          "tlsHandshakeTime": 120.38183733228654,
+          "dnsTime": 15.210681778801138,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 213,
+          "concurrency": 131,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 244.30329399574674
+        },
+        "percentiles": {
+          "p50": 7218,
+          "p90": 12697,
+          "p95": 12850,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:55.081Z",
+        "receivedAt": "2025-10-07T13:20:56.806Z",
+        "totalLatencyMs": 1725,
+        "spans": {
+          "queueTime": 180,
+          "computeTime": 3.317059178048435,
+          "ioTime": 4.924167,
+          "externalCallTime": 4.924167,
+          "gcTime": 1.923530468543838,
+          "tlsHandshakeTime": 128.4210263005304,
+          "dnsTime": 2.3366764477741064,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 132,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 191.216782955808
+        },
+        "percentiles": {
+          "p50": 7218,
+          "p90": 12697,
+          "p95": 12850,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:55.086Z",
+        "receivedAt": "2025-10-07T13:20:56.806Z",
+        "totalLatencyMs": 1720,
+        "spans": {
+          "queueTime": 170,
+          "computeTime": 2.6958155678888076,
+          "ioTime": 5.1185,
+          "externalCallTime": 5.1185,
+          "gcTime": 0.3420115516946871,
+          "tlsHandshakeTime": 139.5043714310504,
+          "dnsTime": 12.023197030772298,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 206,
+          "concurrency": 133,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 230.40757765941922
+        },
+        "percentiles": {
+          "p50": 7017,
+          "p90": 12697,
+          "p95": 12850,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:55.091Z",
+        "receivedAt": "2025-10-07T13:20:56.806Z",
+        "totalLatencyMs": 1715,
+        "spans": {
+          "queueTime": 160,
+          "computeTime": 1.9821579261213287,
+          "ioTime": 5.096,
+          "externalCallTime": 5.096,
+          "gcTime": 0.0742980867328269,
+          "tlsHandshakeTime": 131.11682240579836,
+          "dnsTime": 3.745834621080908,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 134,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 63.5382192795797
+        },
+        "percentiles": {
+          "p50": 7017,
+          "p90": 12697,
+          "p95": 12850,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:55.572Z",
+        "receivedAt": "2025-10-07T13:20:56.806Z",
+        "totalLatencyMs": 1234,
+        "spans": {
+          "queueTime": 150,
+          "computeTime": 1.4567681850174432,
+          "ioTime": 6.799084,
+          "externalCallTime": 6.799084,
+          "gcTime": 0.9355602881656453,
+          "tlsHandshakeTime": 50.69145754061384,
+          "dnsTime": 10.763645169904969,
+          "coldStartTime": 343.81129177341285
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 125,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 122.2753168398186
+        },
+        "percentiles": {
+          "p50": 6889,
+          "p90": 12697,
+          "p95": 12850,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:55.579Z",
+        "receivedAt": "2025-10-07T13:20:56.806Z",
+        "totalLatencyMs": 1227,
+        "spans": {
+          "queueTime": 140,
+          "computeTime": 4.827517886057727,
+          "ioTime": 5.886541,
+          "externalCallTime": 5.886541,
+          "gcTime": 1.3114502596520352,
+          "tlsHandshakeTime": 94.50393397145811,
+          "dnsTime": 18.570113736255458,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 211,
+          "concurrency": 126,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 148.6768893477005
+        },
+        "percentiles": {
+          "p50": 6889,
+          "p90": 12697,
+          "p95": 12850,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:55.585Z",
+        "receivedAt": "2025-10-07T13:20:56.806Z",
+        "totalLatencyMs": 1221,
+        "spans": {
+          "queueTime": 130,
+          "computeTime": 3.830344634772862,
+          "ioTime": 6.469333,
+          "externalCallTime": 6.469333,
+          "gcTime": 1.8909182555370463,
+          "tlsHandshakeTime": 110.3024392092794,
+          "dnsTime": 16.981107453387814,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 127,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 203.35868800278254
+        },
+        "percentiles": {
+          "p50": 6868,
+          "p90": 12697,
+          "p95": 12850,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:55.592Z",
+        "receivedAt": "2025-10-07T13:20:56.806Z",
+        "totalLatencyMs": 1214,
+        "spans": {
+          "queueTime": 120,
+          "computeTime": 2.8720413821288364,
+          "ioTime": 5.2525,
+          "externalCallTime": 5.2525,
+          "gcTime": 1.670981409134058,
+          "tlsHandshakeTime": 125.39870431680305,
+          "dnsTime": 14.654728616129145,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 206,
+          "concurrency": 128,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 238.0639418145504
+        },
+        "percentiles": {
+          "p50": 6868,
+          "p90": 12697,
+          "p95": 12850,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:55.597Z",
+        "receivedAt": "2025-10-07T13:20:56.806Z",
+        "totalLatencyMs": 1209,
+        "spans": {
+          "queueTime": 110,
+          "computeTime": 5.822398540785135,
+          "ioTime": 8.5205,
+          "externalCallTime": 8.5205,
+          "gcTime": 1.0750813195202062,
+          "tlsHandshakeTime": 58.35313498876012,
+          "dnsTime": 7.815298968613602,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 203,
+          "concurrency": 129,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 215.74223211627253
+        },
+        "percentiles": {
+          "p50": 6857,
+          "p90": 12697,
+          "p95": 12850,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:56.073Z",
+        "receivedAt": "2025-10-07T13:20:56.806Z",
+        "totalLatencyMs": 733,
+        "spans": {
+          "queueTime": 100,
+          "computeTime": 5.658751637835997,
+          "ioTime": 8.42525,
+          "externalCallTime": 8.42525,
+          "gcTime": 0.9171513955440669,
+          "tlsHandshakeTime": 126.1574627352839,
+          "dnsTime": 13.348553453666948,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 47,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 139.56621932240222
+        },
+        "percentiles": {
+          "p50": 6857,
+          "p90": 12697,
+          "p95": 12850,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:56.081Z",
+        "receivedAt": "2025-10-07T13:20:56.807Z",
+        "totalLatencyMs": 726,
+        "spans": {
+          "queueTime": 90,
+          "computeTime": 4.120428722311307,
+          "ioTime": 6.707416,
+          "externalCallTime": 6.707416,
+          "gcTime": 0.3858197913975734,
+          "tlsHandshakeTime": 52.06109291453935,
+          "dnsTime": 1.5008715453718402,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 48,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 137.6243602241948
+        },
+        "percentiles": {
+          "p50": 6717,
+          "p90": 12689,
+          "p95": 12843,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:56.088Z",
+        "receivedAt": "2025-10-07T13:20:56.807Z",
+        "totalLatencyMs": 719,
+        "spans": {
+          "queueTime": 80,
+          "computeTime": 5.415112679515887,
+          "ioTime": 5.858041,
+          "externalCallTime": 5.858041,
+          "gcTime": 1.8159719435207382,
+          "tlsHandshakeTime": 74.6434853912002,
+          "dnsTime": 17.889881614624677,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 49,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 110.18643908226768
+        },
+        "percentiles": {
+          "p50": 6717,
+          "p90": 12689,
+          "p95": 12843,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:56.094Z",
+        "receivedAt": "2025-10-07T13:20:56.807Z",
+        "totalLatencyMs": 713,
+        "spans": {
+          "queueTime": 70,
+          "computeTime": 1.6942303486101942,
+          "ioTime": 5.38425,
+          "externalCallTime": 5.38425,
+          "gcTime": 0.10530865769614595,
+          "tlsHandshakeTime": 104.92524095115239,
+          "dnsTime": 0.30364872901153195,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 206,
+          "concurrency": 50,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": false,
+          "downstreamLatency": 89.1048011851133
+        },
+        "percentiles": {
+          "p50": 6712,
+          "p90": 12689,
+          "p95": 12843,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:56.099Z",
+        "receivedAt": "2025-10-07T13:20:56.807Z",
+        "totalLatencyMs": 708,
+        "spans": {
+          "queueTime": 60,
+          "computeTime": 5.085158436430905,
+          "ioTime": 5.771417,
+          "externalCallTime": 5.771417,
+          "gcTime": 0.3499762300501841,
+          "tlsHandshakeTime": 129.10883328189084,
+          "dnsTime": 12.965455686117071,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 51,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 145.63494948452052
+        },
+        "percentiles": {
+          "p50": 6712,
+          "p90": 12689,
+          "p95": 12843,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:56.574Z",
+        "receivedAt": "2025-10-07T13:20:56.807Z",
+        "totalLatencyMs": 233,
+        "spans": {
+          "queueTime": 50,
+          "computeTime": 3.7292549615932717,
+          "ioTime": 21.111375,
+          "externalCallTime": 21.111375,
+          "gcTime": 0.18760589383042303,
+          "tlsHandshakeTime": 50.48918014315342,
+          "dnsTime": 0.7702066059644608,
+          "coldStartTime": 607.2478750507486
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 52,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 62.44362775079044
+        },
+        "percentiles": {
+          "p50": 6706,
+          "p90": 12689,
+          "p95": 12843,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:56.596Z",
+        "receivedAt": "2025-10-07T13:20:56.807Z",
+        "totalLatencyMs": 211,
+        "spans": {
+          "queueTime": 40,
+          "computeTime": 1.8811219783660018,
+          "ioTime": 12.542375,
+          "externalCallTime": 12.542375,
+          "gcTime": 0.6152626638230054,
+          "tlsHandshakeTime": 73.15045920280532,
+          "dnsTime": 17.840670513668634,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 213,
+          "concurrency": 53,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 224.63347242382628
+        },
+        "percentiles": {
+          "p50": 6706,
+          "p90": 12689,
+          "p95": 12843,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:56.608Z",
+        "receivedAt": "2025-10-07T13:20:56.807Z",
+        "totalLatencyMs": 199,
+        "spans": {
+          "queueTime": 30,
+          "computeTime": 2.297521948030036,
+          "ioTime": 9.9735,
+          "externalCallTime": 9.9735,
+          "gcTime": 1.4354585854270607,
+          "tlsHandshakeTime": 107.63692143110805,
+          "dnsTime": 6.739576928879569,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 211,
+          "concurrency": 54,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 173.003200617907
+        },
+        "percentiles": {
+          "p50": 6701,
+          "p90": 12689,
+          "p95": 12843,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:56.618Z",
+        "receivedAt": "2025-10-07T13:20:56.807Z",
+        "totalLatencyMs": 189,
+        "spans": {
+          "queueTime": 20,
+          "computeTime": 3.492603920381006,
+          "ioTime": 5.868833,
+          "externalCallTime": 5.868833,
+          "gcTime": 1.0923671645935618,
+          "tlsHandshakeTime": 129.28828503992008,
+          "dnsTime": 8.509262034348207,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 207,
+          "concurrency": 55,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 237.3473684158694
+        },
+        "percentiles": {
+          "p50": 6701,
+          "p90": 12689,
+          "p95": 12843,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:56.624Z",
+        "receivedAt": "2025-10-07T13:20:56.807Z",
+        "totalLatencyMs": 183,
+        "spans": {
+          "queueTime": 10,
+          "computeTime": 5.461582829043214,
+          "ioTime": 7.87175,
+          "externalCallTime": 7.87175,
+          "gcTime": 1.162144015846998,
+          "tlsHandshakeTime": 66.78501064866842,
+          "dnsTime": 12.128522740967282,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 56,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 232.84215325673122
+        },
+        "percentiles": {
+          "p50": 6692,
+          "p90": 12689,
+          "p95": 12843,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:57.075Z",
+        "receivedAt": "2025-10-07T13:20:58.119Z",
+        "totalLatencyMs": 1044,
+        "spans": {
+          "queueTime": 150,
+          "computeTime": 5.355312806831134,
+          "ioTime": 10.304417,
+          "externalCallTime": 10.304417,
+          "gcTime": 1.194620028745406,
+          "tlsHandshakeTime": 96.8895301892434,
+          "dnsTime": 19.035225094052443,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 0,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 130.80262415048938
+        },
+        "percentiles": {
+          "p50": 6692,
+          "p90": 12689,
+          "p95": 12843,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:57.085Z",
+        "receivedAt": "2025-10-07T13:20:58.119Z",
+        "totalLatencyMs": 1034,
+        "spans": {
+          "queueTime": 140,
+          "computeTime": 4.544363298482343,
+          "ioTime": 10.378,
+          "externalCallTime": 10.378,
+          "gcTime": 1.538744440620333,
+          "tlsHandshakeTime": 54.62951103340834,
+          "dnsTime": 4.295349063721203,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 1,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 220.86361592502848
+        },
+        "percentiles": {
+          "p50": 6216,
+          "p90": 12224,
+          "p95": 12843,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:57.095Z",
+        "receivedAt": "2025-10-07T13:20:58.119Z",
+        "totalLatencyMs": 1024,
+        "spans": {
+          "queueTime": 130,
+          "computeTime": 1.922699507089929,
+          "ioTime": 11.13575,
+          "externalCallTime": 11.13575,
+          "gcTime": 1.2627612135437531,
+          "tlsHandshakeTime": 97.51054392971272,
+          "dnsTime": 2.6476501848480405,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 2,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 238.5438046925015
+        },
+        "percentiles": {
+          "p50": 6216,
+          "p90": 12224,
+          "p95": 12843,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:57.106Z",
+        "receivedAt": "2025-10-07T13:20:58.119Z",
+        "totalLatencyMs": 1013,
+        "spans": {
+          "queueTime": 120,
+          "computeTime": 3.2983365072782713,
+          "ioTime": 9.400125,
+          "externalCallTime": 9.400125,
+          "gcTime": 1.4587613182731958,
+          "tlsHandshakeTime": 57.858444275166775,
+          "dnsTime": 19.602506945939954,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 206,
+          "concurrency": 3,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 99.12886392758833
+        },
+        "percentiles": {
+          "p50": 6210,
+          "p90": 12224,
+          "p95": 12843,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:57.116Z",
+        "receivedAt": "2025-10-07T13:20:58.119Z",
+        "totalLatencyMs": 1003,
+        "spans": {
+          "queueTime": 110,
+          "computeTime": 1.9906302168954972,
+          "ioTime": 7.9135,
+          "externalCallTime": 7.9135,
+          "gcTime": 1.2727227654991093,
+          "tlsHandshakeTime": 119.45087452426661,
+          "dnsTime": 1.1543968123971915,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 4,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 101.44854355571229
+        },
+        "percentiles": {
+          "p50": 6210,
+          "p90": 12224,
+          "p95": 12843,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:57.575Z",
+        "receivedAt": "2025-10-07T13:20:58.119Z",
+        "totalLatencyMs": 544,
+        "spans": {
+          "queueTime": 100,
+          "computeTime": 5.629716562918117,
+          "ioTime": 36.941,
+          "externalCallTime": 36.941,
+          "gcTime": 1.810353699545412,
+          "tlsHandshakeTime": 145.6420050255947,
+          "dnsTime": 15.11208014566597,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 219,
+          "concurrency": 5,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 55.494654525925746
+        },
+        "percentiles": {
+          "p50": 6203,
+          "p90": 12224,
+          "p95": 12843,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:57.612Z",
+        "receivedAt": "2025-10-07T13:20:58.119Z",
+        "totalLatencyMs": 507,
+        "spans": {
+          "queueTime": 90,
+          "computeTime": 5.337237664604144,
+          "ioTime": 8.261167,
+          "externalCallTime": 8.261167,
+          "gcTime": 1.1556579957923314,
+          "tlsHandshakeTime": 116.41147283579718,
+          "dnsTime": 18.245479617221555,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 6,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 166.5053450592722
+        },
+        "percentiles": {
+          "p50": 6203,
+          "p90": 12224,
+          "p95": 12843,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:57.621Z",
+        "receivedAt": "2025-10-07T13:20:58.119Z",
+        "totalLatencyMs": 498,
+        "spans": {
+          "queueTime": 80,
+          "computeTime": 2.154272811000644,
+          "ioTime": 5.548333,
+          "externalCallTime": 5.548333,
+          "gcTime": 0.09369866930254211,
+          "tlsHandshakeTime": 104.68603757506807,
+          "dnsTime": 18.919290175386013,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 7,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": false,
+          "downstreamLatency": 85.91732818817462
+        },
+        "percentiles": {
+          "p50": 6197,
+          "p90": 12224,
+          "p95": 12843,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:57.626Z",
+        "receivedAt": "2025-10-07T13:20:58.119Z",
+        "totalLatencyMs": 493,
+        "spans": {
+          "queueTime": 70,
+          "computeTime": 2.1410330069748964,
+          "ioTime": 5.693083,
+          "externalCallTime": 5.693083,
+          "gcTime": 0.6072295620295516,
+          "tlsHandshakeTime": 64.11427381609363,
+          "dnsTime": 1.6811835403698838,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 207,
+          "concurrency": 8,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 79.61807949769423
+        },
+        "percentiles": {
+          "p50": 6197,
+          "p90": 12224,
+          "p95": 12843,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:57.632Z",
+        "receivedAt": "2025-10-07T13:20:58.119Z",
+        "totalLatencyMs": 487,
+        "spans": {
+          "queueTime": 60,
+          "computeTime": 5.013907406942728,
+          "ioTime": 5.328292,
+          "externalCallTime": 5.328292,
+          "gcTime": 1.5158068643153837,
+          "tlsHandshakeTime": 76.02272099678527,
+          "dnsTime": 13.687127080413507,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 9,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 141.37944588793295
+        },
+        "percentiles": {
+          "p50": 6190,
+          "p90": 12224,
+          "p95": 12843,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:58.077Z",
+        "receivedAt": "2025-10-07T13:20:58.119Z",
+        "totalLatencyMs": 42,
+        "spans": {
+          "queueTime": 50,
+          "computeTime": 5.109922765097255,
+          "ioTime": 6.921959,
+          "externalCallTime": 6.921959,
+          "gcTime": 1.1394192761030162,
+          "tlsHandshakeTime": 148.40887106232924,
+          "dnsTime": 18.20989492477954,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 10,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 142.4590828467279
+        },
+        "percentiles": {
+          "p50": 6190,
+          "p90": 12224,
+          "p95": 12843,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:58.084Z",
+        "receivedAt": "2025-10-07T13:20:58.119Z",
+        "totalLatencyMs": 35,
+        "spans": {
+          "queueTime": 40,
+          "computeTime": 4.067750007705602,
+          "ioTime": 5.35225,
+          "externalCallTime": 5.35225,
+          "gcTime": 1.998130332204763,
+          "tlsHandshakeTime": 127.74000901079205,
+          "dnsTime": 18.209640549768103,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 211,
+          "concurrency": 11,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 156.1771588571085
+        },
+        "percentiles": {
+          "p50": 5717,
+          "p90": 11724,
+          "p95": 12836,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:58.089Z",
+        "receivedAt": "2025-10-07T13:20:59.128Z",
+        "totalLatencyMs": 1039,
+        "spans": {
+          "queueTime": 110,
+          "computeTime": 2.67889756224524,
+          "ioTime": 5.335166,
+          "externalCallTime": 5.335166,
+          "gcTime": 0.5186720289493736,
+          "tlsHandshakeTime": 135.11720691677925,
+          "dnsTime": 7.5162911013691724,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 12,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 138.43112595841382
+        },
+        "percentiles": {
+          "p50": 5717,
+          "p90": 11724,
+          "p95": 12836,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:58.094Z",
+        "receivedAt": "2025-10-07T13:20:59.128Z",
+        "totalLatencyMs": 1034,
+        "spans": {
+          "queueTime": 100,
+          "computeTime": 5.4926195982957715,
+          "ioTime": 6.900958,
+          "externalCallTime": 6.900958,
+          "gcTime": 1.5355195670785884,
+          "tlsHandshakeTime": 105.89606457001955,
+          "dnsTime": 1.893873994051991,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 207,
+          "concurrency": 13,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 183.09213599849105
+        },
+        "percentiles": {
+          "p50": 5711,
+          "p90": 11724,
+          "p95": 12836,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:58.101Z",
+        "receivedAt": "2025-10-07T13:20:59.128Z",
+        "totalLatencyMs": 1027,
+        "spans": {
+          "queueTime": 90,
+          "computeTime": 2.7217012591026526,
+          "ioTime": 7.160042,
+          "externalCallTime": 7.160042,
+          "gcTime": 1.3905617151975003,
+          "tlsHandshakeTime": 51.431913719776134,
+          "dnsTime": 19.544906314182565,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 203,
+          "concurrency": 14,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": false,
+          "downstreamLatency": 169.26705131254525
+        },
+        "percentiles": {
+          "p50": 5711,
+          "p90": 11724,
+          "p95": 12836,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:58.578Z",
+        "receivedAt": "2025-10-07T13:20:59.128Z",
+        "totalLatencyMs": 550,
+        "spans": {
+          "queueTime": 80,
+          "computeTime": 5.957957771435443,
+          "ioTime": 11.387958,
+          "externalCallTime": 11.387958,
+          "gcTime": 0.9714227361507595,
+          "tlsHandshakeTime": 64.83550229733007,
+          "dnsTime": 5.463435913105479,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 3,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 145.81175899913603
+        },
+        "percentiles": {
+          "p50": 5703,
+          "p90": 11724,
+          "p95": 12836,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:58.589Z",
+        "receivedAt": "2025-10-07T13:20:59.128Z",
+        "totalLatencyMs": 539,
+        "spans": {
+          "queueTime": 70,
+          "computeTime": 5.356692357264732,
+          "ioTime": 7.024625,
+          "externalCallTime": 7.024625,
+          "gcTime": 0.7164821929475345,
+          "tlsHandshakeTime": 102.22870373706552,
+          "dnsTime": 4.9835512209160715,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 4,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 240.61261397961218
+        },
+        "percentiles": {
+          "p50": 5703,
+          "p90": 11724,
+          "p95": 12836,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:58.596Z",
+        "receivedAt": "2025-10-07T13:20:59.128Z",
+        "totalLatencyMs": 532,
+        "spans": {
+          "queueTime": 60,
+          "computeTime": 1.903099334478854,
+          "ioTime": 7.274292,
+          "externalCallTime": 7.274292,
+          "gcTime": 1.8245460487072953,
+          "tlsHandshakeTime": 100.56782969253575,
+          "dnsTime": 5.953274115931819,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 5,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 95.07668422192438
+        },
+        "percentiles": {
+          "p50": 5698,
+          "p90": 11724,
+          "p95": 12836,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:58.603Z",
+        "receivedAt": "2025-10-07T13:20:59.128Z",
+        "totalLatencyMs": 525,
+        "spans": {
+          "queueTime": 50,
+          "computeTime": 3.890378426554091,
+          "ioTime": 7.709041,
+          "externalCallTime": 7.709041,
+          "gcTime": 0.6982439700495449,
+          "tlsHandshakeTime": 135.80101219902963,
+          "dnsTime": 8.735930743538255,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 207,
+          "concurrency": 6,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 190.14028601693198
+        },
+        "percentiles": {
+          "p50": 5698,
+          "p90": 11724,
+          "p95": 12836,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:58.611Z",
+        "receivedAt": "2025-10-07T13:20:59.128Z",
+        "totalLatencyMs": 517,
+        "spans": {
+          "queueTime": 40,
+          "computeTime": 4.649592916122449,
+          "ioTime": 6.947083,
+          "externalCallTime": 6.947083,
+          "gcTime": 1.825237151203849,
+          "tlsHandshakeTime": 138.7001000642448,
+          "dnsTime": 18.697635884429534,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 201,
+          "concurrency": 7,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 104.79794560619894
+        },
+        "percentiles": {
+          "p50": 5696,
+          "p90": 11724,
+          "p95": 12836,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:59.079Z",
+        "receivedAt": "2025-10-07T13:21:00.137Z",
+        "totalLatencyMs": 1058,
+        "spans": {
+          "queueTime": 150,
+          "computeTime": 1.7029191127536971,
+          "ioTime": 24.991292,
+          "externalCallTime": 24.991292,
+          "gcTime": 1.9737682450758927,
+          "tlsHandshakeTime": 52.03936285843578,
+          "dnsTime": 17.14768203794148,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 8,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 193.58719392029218
+        },
+        "percentiles": {
+          "p50": 5696,
+          "p90": 11724,
+          "p95": 12836,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:59.104Z",
+        "receivedAt": "2025-10-07T13:21:00.137Z",
+        "totalLatencyMs": 1033,
+        "spans": {
+          "queueTime": 140,
+          "computeTime": 3.248674872422076,
+          "ioTime": 12.723666,
+          "externalCallTime": 12.723666,
+          "gcTime": 1.6252506952792527,
+          "tlsHandshakeTime": 137.0577744548861,
+          "dnsTime": 5.66524094282669,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 9,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 175.70715415814058
+        },
+        "percentiles": {
+          "p50": 5690,
+          "p90": 11683,
+          "p95": 12836,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:59.117Z",
+        "receivedAt": "2025-10-07T13:21:00.137Z",
+        "totalLatencyMs": 1020,
+        "spans": {
+          "queueTime": 130,
+          "computeTime": 4.186032793642626,
+          "ioTime": 8.562708,
+          "externalCallTime": 8.562708,
+          "gcTime": 0.8689662775003799,
+          "tlsHandshakeTime": 78.88348738454197,
+          "dnsTime": 9.488659796743327,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 211,
+          "concurrency": 10,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 232.66540313861665
+        },
+        "percentiles": {
+          "p50": 5690,
+          "p90": 11683,
+          "p95": 12836,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:59.125Z",
+        "receivedAt": "2025-10-07T13:21:00.137Z",
+        "totalLatencyMs": 1012,
+        "spans": {
+          "queueTime": 120,
+          "computeTime": 4.165789297550096,
+          "ioTime": 9.018125,
+          "externalCallTime": 9.018125,
+          "gcTime": 0.1780394045449607,
+          "tlsHandshakeTime": 93.92683588547075,
+          "dnsTime": 15.219279867183232,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 206,
+          "concurrency": 3,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 190.90107222100778
+        },
+        "percentiles": {
+          "p50": 5680,
+          "p90": 11683,
+          "p95": 12836,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:59.134Z",
+        "receivedAt": "2025-10-07T13:21:00.137Z",
+        "totalLatencyMs": 1003,
+        "spans": {
+          "queueTime": 110,
+          "computeTime": 5.916625557680589,
+          "ioTime": 6.883458,
+          "externalCallTime": 6.883458,
+          "gcTime": 0.49328728320855797,
+          "tlsHandshakeTime": 52.3421136993278,
+          "dnsTime": 12.574635987927039,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 4,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 207.04529441901713
+        },
+        "percentiles": {
+          "p50": 5680,
+          "p90": 11683,
+          "p95": 12836,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:20:59.579Z",
+        "receivedAt": "2025-10-07T13:21:00.138Z",
+        "totalLatencyMs": 559,
+        "spans": {
+          "queueTime": 100,
+          "computeTime": 1.4291366212991254,
+          "ioTime": 20.779958,
+          "externalCallTime": 20.779958,
+          "gcTime": 1.076936824607833,
+          "tlsHandshakeTime": 127.10532240779504,
+          "dnsTime": 3.223155494603418,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 5,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 215.6756257411732
+        },
+        "percentiles": {
+          "p50": 5237,
+          "p90": 11683,
+          "p95": 12836,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:20:59.600Z",
+        "receivedAt": "2025-10-07T13:21:00.138Z",
+        "totalLatencyMs": 538,
+        "spans": {
+          "queueTime": 90,
+          "computeTime": 5.014734747123096,
+          "ioTime": 5.537375,
+          "externalCallTime": 5.537375,
+          "gcTime": 0.39767528741845304,
+          "tlsHandshakeTime": 74.30969985409494,
+          "dnsTime": 10.08763922159115,
+          "coldStartTime": 719.7214073630853
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 6,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": false,
+          "downstreamLatency": 195.2107343844608
+        },
+        "percentiles": {
+          "p50": 5237,
+          "p90": 11683,
+          "p95": 12836,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:20:59.606Z",
+        "receivedAt": "2025-10-07T13:21:00.138Z",
+        "totalLatencyMs": 532,
+        "spans": {
+          "queueTime": 80,
+          "computeTime": 5.987050643831288,
+          "ioTime": 4.568958,
+          "externalCallTime": 4.568958,
+          "gcTime": 1.5887828511483804,
+          "tlsHandshakeTime": 118.10789629067922,
+          "dnsTime": 1.749886156766265,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 7,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 93.12575577259103
+        },
+        "percentiles": {
+          "p50": 5218,
+          "p90": 11683,
+          "p95": 12836,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:20:59.610Z",
+        "receivedAt": "2025-10-07T13:21:00.138Z",
+        "totalLatencyMs": 528,
+        "spans": {
+          "queueTime": 70,
+          "computeTime": 4.609454262939834,
+          "ioTime": 5.642959,
+          "externalCallTime": 5.642959,
+          "gcTime": 1.178824818926441,
+          "tlsHandshakeTime": 138.8321566573864,
+          "dnsTime": 10.944220960247794,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 207,
+          "concurrency": 8,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 188.6763658724784
+        },
+        "percentiles": {
+          "p50": 5218,
+          "p90": 11683,
+          "p95": 12836,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:20:59.616Z",
+        "receivedAt": "2025-10-07T13:21:00.138Z",
+        "totalLatencyMs": 522,
+        "spans": {
+          "queueTime": 60,
+          "computeTime": 5.299028321588202,
+          "ioTime": 7.201792,
+          "externalCallTime": 7.201792,
+          "gcTime": 0.7950757747061461,
+          "tlsHandshakeTime": 123.11308186842871,
+          "dnsTime": 12.549415811078436,
+          "coldStartTime": 110.0364042022246
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 9,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 235.6646785495768
+        },
+        "percentiles": {
+          "p50": 5217,
+          "p90": 11683,
+          "p95": 12836,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:21:00.080Z",
+        "receivedAt": "2025-10-07T13:21:00.138Z",
+        "totalLatencyMs": 58,
+        "spans": {
+          "queueTime": 50,
+          "computeTime": 5.04750913204704,
+          "ioTime": 19.045125,
+          "externalCallTime": 19.045125,
+          "gcTime": 1.8126763927642124,
+          "tlsHandshakeTime": 145.1461602555653,
+          "dnsTime": 0.19621634003678778,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 218,
+          "concurrency": 10,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 118.30906767977014
+        },
+        "percentiles": {
+          "p50": 5217,
+          "p90": 11683,
+          "p95": 12836,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:21:00.099Z",
+        "receivedAt": "2025-10-07T13:21:01.139Z",
+        "totalLatencyMs": 1040,
+        "spans": {
+          "queueTime": 130,
+          "computeTime": 5.875692160956623,
+          "ioTime": 11.206833,
+          "externalCallTime": 11.206833,
+          "gcTime": 0.14428632251464357,
+          "tlsHandshakeTime": 97.68529323011356,
+          "dnsTime": 1.6271793536437062,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 213,
+          "concurrency": 11,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 188.9256852277149
+        },
+        "percentiles": {
+          "p50": 5211,
+          "p90": 11533,
+          "p95": 12828,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:21:00.111Z",
+        "receivedAt": "2025-10-07T13:21:01.140Z",
+        "totalLatencyMs": 1029,
+        "spans": {
+          "queueTime": 120,
+          "computeTime": 5.292885058062327,
+          "ioTime": 9.814041,
+          "externalCallTime": 9.814041,
+          "gcTime": 1.2591444420164697,
+          "tlsHandshakeTime": 88.00277569186235,
+          "dnsTime": 7.4161091312865235,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 12,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 233.46996500573192
+        },
+        "percentiles": {
+          "p50": 5211,
+          "p90": 11533,
+          "p95": 12828,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:21:00.120Z",
+        "receivedAt": "2025-10-07T13:21:01.140Z",
+        "totalLatencyMs": 1020,
+        "spans": {
+          "queueTime": 120,
+          "computeTime": 5.67824526375681,
+          "ioTime": 6.540666,
+          "externalCallTime": 6.540666,
+          "gcTime": 1.6830299426149624,
+          "tlsHandshakeTime": 72.7249920230756,
+          "dnsTime": 0.38718834885821174,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 207,
+          "concurrency": 13,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 51.77056240071689
+        },
+        "percentiles": {
+          "p50": 5210,
+          "p90": 11533,
+          "p95": 12828,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:21:00.127Z",
+        "receivedAt": "2025-10-07T13:21:01.140Z",
+        "totalLatencyMs": 1013,
+        "spans": {
+          "queueTime": 110,
+          "computeTime": 1.5881656125393886,
+          "ioTime": 5.824666,
+          "externalCallTime": 5.824666,
+          "gcTime": 0.783842754909938,
+          "tlsHandshakeTime": 108.90190629420721,
+          "dnsTime": 1.256906711927459,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 14,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 170.83531625265095
+        },
+        "percentiles": {
+          "p50": 5210,
+          "p90": 11533,
+          "p95": 12828,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:21:00.581Z",
+        "receivedAt": "2025-10-07T13:21:01.141Z",
+        "totalLatencyMs": 560,
+        "spans": {
+          "queueTime": 100,
+          "computeTime": 3.2654443118747514,
+          "ioTime": 9.546416,
+          "externalCallTime": 9.546416,
+          "gcTime": 0.35889356085609325,
+          "tlsHandshakeTime": 72.26300593401032,
+          "dnsTime": 2.2888398939689703,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 217,
+          "concurrency": 4,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 182.96060873655478
+        },
+        "percentiles": {
+          "p50": 5205,
+          "p90": 11533,
+          "p95": 12828,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:21:00.591Z",
+        "receivedAt": "2025-10-07T13:21:01.141Z",
+        "totalLatencyMs": 550,
+        "spans": {
+          "queueTime": 90,
+          "computeTime": 4.384413668579345,
+          "ioTime": 7.377167,
+          "externalCallTime": 7.377167,
+          "gcTime": 0.6793890117984906,
+          "tlsHandshakeTime": 72.03189995035956,
+          "dnsTime": 1.1384400726337995,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 5,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 141.53416503569133
+        },
+        "percentiles": {
+          "p50": 5205,
+          "p90": 11533,
+          "p95": 12828,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:21:00.598Z",
+        "receivedAt": "2025-10-07T13:21:01.141Z",
+        "totalLatencyMs": 543,
+        "spans": {
+          "queueTime": 80,
+          "computeTime": 2.8417089376886784,
+          "ioTime": 16.802208,
+          "externalCallTime": 16.802208,
+          "gcTime": 0.6464685726576902,
+          "tlsHandshakeTime": 116.35955305356924,
+          "dnsTime": 2.198257218019064,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 213,
+          "concurrency": 6,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 50.837698473981604
+        },
+        "percentiles": {
+          "p50": 5204,
+          "p90": 11533,
+          "p95": 12828,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:21:00.615Z",
+        "receivedAt": "2025-10-07T13:21:01.141Z",
+        "totalLatencyMs": 526,
+        "spans": {
+          "queueTime": 70,
+          "computeTime": 3.11355777302886,
+          "ioTime": 8.354625,
+          "externalCallTime": 8.354625,
+          "gcTime": 0.3204255088934387,
+          "tlsHandshakeTime": 102.0719716519123,
+          "dnsTime": 5.234806382193118,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 207,
+          "concurrency": 7,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 200.83034564085938
+        },
+        "percentiles": {
+          "p50": 5204,
+          "p90": 11533,
+          "p95": 12828,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:21:00.623Z",
+        "receivedAt": "2025-10-07T13:21:01.141Z",
+        "totalLatencyMs": 518,
+        "spans": {
+          "queueTime": 60,
+          "computeTime": 3.83917299376387,
+          "ioTime": 8.110042,
+          "externalCallTime": 8.110042,
+          "gcTime": 0.6749357932761137,
+          "tlsHandshakeTime": 73.14062613195927,
+          "dnsTime": 16.75974782437532,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 203,
+          "concurrency": 8,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 95.1985234788394
+        },
+        "percentiles": {
+          "p50": 5199,
+          "p90": 11533,
+          "p95": 12828,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:21:01.081Z",
+        "receivedAt": "2025-10-07T13:21:01.141Z",
+        "totalLatencyMs": 60,
+        "spans": {
+          "queueTime": 50,
+          "computeTime": 1.9658908690622425,
+          "ioTime": 22.576333,
+          "externalCallTime": 22.576333,
+          "gcTime": 0.35442849721382386,
+          "tlsHandshakeTime": 93.33218339554534,
+          "dnsTime": 10.087913894820698,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 219,
+          "concurrency": 9,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 66.78159435673403
+        },
+        "percentiles": {
+          "p50": 5199,
+          "p90": 11533,
+          "p95": 12828,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:21:01.104Z",
+        "receivedAt": "2025-10-07T13:21:02.147Z",
+        "totalLatencyMs": 1043,
+        "spans": {
+          "queueTime": 140,
+          "computeTime": 4.621536926177309,
+          "ioTime": 12.784583,
+          "externalCallTime": 12.784583,
+          "gcTime": 1.034557462769388,
+          "tlsHandshakeTime": 123.48373236094278,
+          "dnsTime": 11.952413623788916,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 213,
+          "concurrency": 10,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": false,
+          "downstreamLatency": 77.21293988947494
+        },
+        "percentiles": {
+          "p50": 5198,
+          "p90": 11532,
+          "p95": 12828,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:21:01.117Z",
+        "receivedAt": "2025-10-07T13:21:02.148Z",
+        "totalLatencyMs": 1031,
+        "spans": {
+          "queueTime": 130,
+          "computeTime": 1.1189606391454767,
+          "ioTime": 10.379709,
+          "externalCallTime": 10.379709,
+          "gcTime": 1.4979194121969788,
+          "tlsHandshakeTime": 141.86368669334126,
+          "dnsTime": 14.701485417240612,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 11,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 101.9998437038681
+        },
+        "percentiles": {
+          "p50": 5198,
+          "p90": 11532,
+          "p95": 12828,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:21:01.127Z",
+        "receivedAt": "2025-10-07T13:21:02.148Z",
+        "totalLatencyMs": 1021,
+        "spans": {
+          "queueTime": 120,
+          "computeTime": 1.2748833787101157,
+          "ioTime": 6.182,
+          "externalCallTime": 6.182,
+          "gcTime": 1.5182962512684806,
+          "tlsHandshakeTime": 50.07489874205844,
+          "dnsTime": 1.212248335458428,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 206,
+          "concurrency": 12,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 176.7009057887518
+        },
+        "percentiles": {
+          "p50": 5192,
+          "p90": 11532,
+          "p95": 12828,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:21:01.134Z",
+        "receivedAt": "2025-10-07T13:21:02.148Z",
+        "totalLatencyMs": 1014,
+        "spans": {
+          "queueTime": 110,
+          "computeTime": 4.884082663153726,
+          "ioTime": 6.647625,
+          "externalCallTime": 6.647625,
+          "gcTime": 1.1011191776707205,
+          "tlsHandshakeTime": 66.98375319537881,
+          "dnsTime": 7.453279429381312,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 201,
+          "concurrency": 11,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 68.40738315507302
+        },
+        "percentiles": {
+          "p50": 5192,
+          "p90": 11532,
+          "p95": 12828,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:21:01.583Z",
+        "receivedAt": "2025-10-07T13:21:02.149Z",
+        "totalLatencyMs": 566,
+        "spans": {
+          "queueTime": 100,
+          "computeTime": 2.384013964767176,
+          "ioTime": 19.992042,
+          "externalCallTime": 19.992042,
+          "gcTime": 0.8532497283766309,
+          "tlsHandshakeTime": 66.60410717135264,
+          "dnsTime": 19.169279811145135,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 219,
+          "concurrency": 4,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 95.49967789446768
+        },
+        "percentiles": {
+          "p50": 4736,
+          "p90": 11532,
+          "p95": 12828,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "HumiditySensor1",
+        "generatedAt": "2025-10-07T13:21:01.603Z",
+        "receivedAt": "2025-10-07T13:21:02.149Z",
+        "totalLatencyMs": 546,
+        "spans": {
+          "queueTime": 90,
+          "computeTime": 3.5952667037074093,
+          "ioTime": 11.442083,
+          "externalCallTime": 11.442083,
+          "gcTime": 1.9152523154661667,
+          "tlsHandshakeTime": 65.15228538579726,
+          "dnsTime": 15.653877516234406,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 213,
+          "concurrency": 5,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 79.3603908077404
+        },
+        "percentiles": {
+          "p50": 4736,
+          "p90": 11532,
+          "p95": 12828,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "PressureSensor1",
+        "generatedAt": "2025-10-07T13:21:01.615Z",
+        "receivedAt": "2025-10-07T13:21:02.149Z",
+        "totalLatencyMs": 534,
+        "spans": {
+          "queueTime": 80,
+          "computeTime": 5.9099934280192485,
+          "ioTime": 9.532959,
+          "externalCallTime": 9.532959,
+          "gcTime": 0.5803360225404397,
+          "tlsHandshakeTime": 130.156886183837,
+          "dnsTime": 2.3994388599325855,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 212,
+          "concurrency": 6,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 113.47355811773951
+        },
+        "percentiles": {
+          "p50": 4730,
+          "p90": 11532,
+          "p95": 12828,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "LightSensor1",
+        "generatedAt": "2025-10-07T13:21:01.624Z",
+        "receivedAt": "2025-10-07T13:21:02.149Z",
+        "totalLatencyMs": 525,
+        "spans": {
+          "queueTime": 70,
+          "computeTime": 1.5210385495257197,
+          "ioTime": 6.333833,
+          "externalCallTime": 6.333833,
+          "gcTime": 1.314212702860814,
+          "tlsHandshakeTime": 92.5930053406435,
+          "dnsTime": 9.765245260768474,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 206,
+          "concurrency": 7,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 108.88291795348444
+        },
+        "percentiles": {
+          "p50": 4730,
+          "p90": 11532,
+          "p95": 12828,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "CO2Sensor1",
+        "generatedAt": "2025-10-07T13:21:01.631Z",
+        "receivedAt": "2025-10-07T13:21:02.149Z",
+        "totalLatencyMs": 518,
+        "spans": {
+          "queueTime": 60,
+          "computeTime": 4.0772702733110116,
+          "ioTime": 6.316333,
+          "externalCallTime": 6.316333,
+          "gcTime": 0.9501308953517578,
+          "tlsHandshakeTime": 115.28612741831259,
+          "dnsTime": 7.14281922038726,
+          "coldStartTime": 0
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 202,
+          "concurrency": 8,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 80.38743151837781
+        },
+        "percentiles": {
+          "p50": 4725,
+          "p90": 11532,
+          "p95": 12828,
+          "p99": 13314
+        }
+      },
+      {
+        "sensorId": "TemperatureSensor1",
+        "generatedAt": "2025-10-07T13:21:02.083Z",
+        "receivedAt": "2025-10-07T13:21:02.165Z",
+        "totalLatencyMs": 82,
+        "spans": {
+          "queueTime": 50,
+          "computeTime": 5.748327159481111,
+          "ioTime": 18.519667,
+          "externalCallTime": 18.519667,
+          "gcTime": 1.229407272501141,
+          "tlsHandshakeTime": 77.448219239231,
+          "dnsTime": 5.16596221390472,
+          "coldStartTime": 540.4746782183267
+        },
+        "dimensions": {
+          "endpoint": "/measurements/sse",
+          "payloadSize": 219,
+          "concurrency": 9,
+          "region": "local",
+          "coldStart": false,
+          "cacheHit": true,
+          "downstreamLatency": 123.00723325423336
+        },
+        "percentiles": {
+          "p50": 4725,
+          "p90": 11532,
+          "p95": 12828,
+          "p99": 13314
+        }
+      }
+    ],
+    "analysis": {
+      "byEndpoint": {
+        "/measurements/sse": {
+          "count": 201,
+          "avgLatency": 5237.358208955224,
+          "p95": 12724,
+          "p99": 13304
+        }
+      },
+      "byPayloadSize": {
+        "100-500B": {
+          "count": 201,
+          "avgLatency": 5237.358208955224,
+          "p95": 12724,
+          "p99": 13304
+        }
+      },
+      "byConcurrency": {
+        "1-5 concurrent": {
+          "count": 16,
+          "avgLatency": 4744.0625,
+          "p95": 13325,
+          "p99": 13351.4
+        },
+        "5-10 concurrent": {
+          "count": 30,
+          "avgLatency": 2583,
+          "p95": 12846.85,
+          "p99": 12855.68
+        },
+        "10-20 concurrent": {
+          "count": 25,
+          "avgLatency": 5387.96,
+          "p95": 12715.6,
+          "p99": 12722.32
+        },
+        "20+ concurrent": {
+          "count": 130,
+          "avgLatency": 5881.653846153846,
+          "p95": 11215.75,
+          "p99": 11492.2
+        }
+      },
+      "byRegion": {
+        "local": {
+          "count": 201,
+          "avgLatency": 5237.358208955224,
+          "p95": 12724,
+          "p99": 13304
+        }
+      },
+      "tailAnalysis": {
+        "p50": 4718,
+        "p90": 11514,
+        "p95": 12724,
+        "p99": 13304,
+        "p999": 13349.2,
+        "tailLatencyRatio": 2.8198389147944045,
+        "spanBreakdown": {
+          "avgSpans": {
+            "queueTime": 538.1592039800995,
+            "computeTime": 3.718639861559219,
+            "ioTime": 15.128407711442785,
+            "externalCallTime": 15.128407711442785,
+            "gcTime": 1.0270144637118523,
+            "tlsHandshakeTime": 99.88831861217966,
+            "dnsTime": 10.15779472773047,
+            "coldStartTime": 33.79746511599166
+          },
+          "spanPercentages": {
+            "queueTime": 75.05652187912798,
+            "computeTime": 0.5186349542393743,
+            "ioTime": 2.1099437787043085,
+            "externalCallTime": 2.1099437787043085,
+            "gcTime": 0.14323667233724396,
+            "tlsHandshakeTime": 13.93132313994877,
+            "dnsTime": 1.416697394724454,
+            "coldStartTime": 4.7136984022135175
+          },
+          "totalAvgLatency": 717.0052521841582
+        }
+      },
+      "sloCompliance": {
+        "p95": {
+          "actual": 12724,
+          "target": 1500,
+          "compliant": false,
+          "errorBudgetBurn": 7.482666666666667
+        },
+        "p99": {
+          "actual": 13304,
+          "target": 2500,
+          "compliant": false,
+          "errorBudgetBurn": 4.3216
+        },
+        "overallCompliant": false,
+        "burnRateAlert": true
+      },
+      "mitigationEffectiveness": {
+        "coldStartImpact": null,
+        "cacheHitImpact": {
+          "hitRate": 0.9303482587064676,
+          "avgLatencyWithCache": 5227.850267379679,
+          "avgLatencyWithoutCache": 5364.357142857143
+        },
+        "mitigationConfig": {
+          "capacity": {
+            "preWarmed": true,
+            "minReplicas": 3,
+            "scaleOnQueueTime": true
+          },
+          "concurrency": {
+            "maxPerInstance": 50,
+            "admissionControl": true
+          },
+          "timeouts": {
+            "hedgingEnabled": true,
+            "jitteredRetries": true,
+            "timeoutMs": 2000
+          },
+          "caching": {
+            "readThrough": true,
+            "writeThrough": true,
+            "ttlValidation": true
+          },
+          "downstream": {
+            "parallelized": true,
+            "bulkheads": true,
+            "circuitBreakers": true
+          },
+          "runtime": {
+            "memoryTuned": true,
+            "asyncIO": true,
+            "cpuPinned": true
+          },
+          "network": {
+            "keepAlives": true,
+            "connectionPooling": true,
+            "tlsOptimized": true,
+            "servicesColocated": true
+          },
+          "payloads": {
+            "compressed": true,
+            "chunked": true,
+            "paginated": true
+          }
+        }
+      }
+    }
+  }
+}
